@@ -37,7 +37,7 @@ if(values.f_year_of_death!=="" || values.f_father_age!==""){
     if(values["f_alive"] === "true"){
       // f_year_of_death , f_cause_of_death , f_patient_age_at_death ,f_father_age , f_father_health
       console.log(values.f_father_age , values.f_father_health)
-      Axios.post("http://localhost:3002/father_insert",{
+      Axios.post("https://addict-rehab-app.herokuapp.com/father_insert",{
         reg_no:values.reg,
         f_year_of_death: values.f_year_of_death,
         f_cause_of_death:values.f_cause_of_death,
@@ -55,7 +55,7 @@ if(values.f_year_of_death!=="" || values.f_father_age!==""){
       // alive = false
       // dead = true
       console.log(values.f_year_of_death)
-      Axios.post("http://localhost:3002/father_insert",{
+      Axios.post("https://addict-rehab-app.herokuapp.com/father_insert",{
         reg_no:values.reg,
         f_year_of_death:values.f_year_of_death,
         f_cause_of_death:values.f_cause_of_death,
@@ -74,7 +74,7 @@ if(values.f_year_of_death!=="" || values.f_father_age!==""){
     if(values["w_alive"] === "true"){
       // 
       console.log(values.f_father_age , values.f_father_health)
-      Axios.post("http://localhost:3002/wife_insert",{
+      Axios.post("https://addict-rehab-app.herokuapp.com/wife_insert",{
         reg_no:values.reg,
         f_wife_age:values.f_wife_age,
         f_wife_health:values.f_wife_health,
@@ -92,7 +92,7 @@ if(values.f_year_of_death!=="" || values.f_father_age!==""){
       // alive = false
       // dead = true
       console.log(values.f_year_of_death)
-      Axios.post("http://localhost:3002/wife_insert",{
+      Axios.post("https://addict-rehab-app.herokuapp.com/wife_insert",{
         reg_no:values.reg,
         f_wife_age:values.f_wife_age,
         f_wife_health:values.f_wife_health,
@@ -111,7 +111,7 @@ if(values.f_year_of_death!=="" || values.f_father_age!==""){
     if(values["m_alive"] === "true"){
       // 
       console.log(values.f_mother_age , values.f_mother_health)
-      Axios.post("http://localhost:3002/mother_insert",{
+      Axios.post("https://addict-rehab-app.herokuapp.com/mother_insert",{
         reg_no:values.reg,
         f_mother_age:values.f_mother_age,
         f_mother_health:values.f_mother_health,
@@ -129,7 +129,7 @@ if(values.f_year_of_death!=="" || values.f_father_age!==""){
       // alive = false
       // dead = true
       console.log(values.f_mother_year_of_death)
-      Axios.post("http://localhost:3002/mother_insert",{
+      Axios.post("https://addict-rehab-app.herokuapp.com/mother_insert",{
         reg_no:values.reg,
         f_mother_age:values.f_mother_age,
         f_mother_health:values.f_mother_health,
@@ -150,7 +150,7 @@ if(values.f_year_of_death!=="" || values.f_father_age!==""){
     for(let item of brothers){
      if(item.age!=="" || item.cod!==""){
 
-    Axios.post("http://localhost:3002/brother_insert",{
+    Axios.post("https://addict-rehab-app.herokuapp.com/brother_insert",{
           reg_no:values.reg,
           brothers : brothers,
     });
@@ -158,7 +158,7 @@ if(values.f_year_of_death!=="" || values.f_father_age!==""){
 }
   for(let item of sisters){
     if(item.age!=="" || item.cod!==""){
-    Axios.post("http://localhost:3002/sister_insert",{
+    Axios.post("https://addict-rehab-app.herokuapp.com/sister_insert",{
           reg_no:values.reg,
           sisters : sisters,
     });
@@ -167,7 +167,7 @@ if(values.f_year_of_death!=="" || values.f_father_age!==""){
 
 for(let item of children){
   if(item.age!=="" || item.cod!==""){
-    Axios.post("http://localhost:3002/children_insert",{
+    Axios.post("https://addict-rehab-app.herokuapp.com/children_insert",{
           reg_no:values.reg,
           children : children,
     });
@@ -177,42 +177,42 @@ for(let item of children){
     console.log(values.f_majorDepression,values.f_suicide);
 
     if(values.f_majorDepression){
-      Axios.post("http://localhost:3002/health_status_insert",{
+      Axios.post("https://addict-rehab-app.herokuapp.com/health_status_insert",{
        reg_no:values.reg,
         prblm:"Major Depression",
         relation:values.f_majorDepression
       })
     }
     if(values.f_suicide){
-      Axios.post("http://localhost:3002/health_status_insert",{
+      Axios.post("https://addict-rehab-app.herokuapp.com/health_status_insert",{
         reg_no:values.reg,
          prblm:"Suicide/Attempted Suicide",
          relation:values.f_suicide
        })
     }
     if(values.f_psychiatric){
-      Axios.post("http://localhost:3002/health_status_insert",{
+      Axios.post("https://addict-rehab-app.herokuapp.com/health_status_insert",{
         reg_no:values.reg,
          prblm:"Psychiatric Illness",
          relation:values.f_psychiatric
        })
     }
     if(values.f_alcoholdependence){
-      Axios.post("http://localhost:3002/health_status_insert",{
+      Axios.post("https://addict-rehab-app.herokuapp.com/health_status_insert",{
         reg_no:values.reg,
          prblm:"Alcohol Dependence",
          relation:values.f_alcoholdependence
        })
     }
     if(values.f_drugdependence){
-      Axios.post("http://localhost:3002/health_status_insert",{
+      Axios.post("https://addict-rehab-app.herokuapp.com/health_status_insert",{
         reg_no:values.reg,
          prblm:"Drug Dependence",
          relation:values.f_drugdependence
        })
     }
     if(values.f_otherss){
-      Axios.post("http://localhost:3002/health_status_insert",{
+      Axios.post("https://addict-rehab-app.herokuapp.com/health_status_insert",{
         reg_no:values.reg,
          prblm:"Others",
          relation:values.f_otherss

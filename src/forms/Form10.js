@@ -14,7 +14,7 @@ export class Form10 extends Component {
   continue = e => {
     e.preventDefault();
     
-    Axios.post("http://localhost:3002/marital_hist_insert",{
+    Axios.post("https://addict-rehab-app.herokuapp.com/marital_hist_insert",{
         reg_no:this.props.values.reg,
         wifeName:this.props.values.wifeName,
         wifeAge:this.props.values.wifeAge,

@@ -330,7 +330,7 @@ if(!isError)
         this.props.values.pcpresent_paranoid_ideas="";
       }
 
-    Axios.post("http://localhost:3002/section_b_insert",{
+    Axios.post("https://addict-rehab-app.herokuapp.com/section_b_insert",{
       reg:this.props.values.reg,  
       pulseRate:this.props.values.pulseRate,
       bloodPressure:this.props.values.bloodPressure,

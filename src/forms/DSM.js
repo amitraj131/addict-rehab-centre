@@ -73,7 +73,7 @@ function DSM(props){
         var sec12 = max(state["19"] , state["20"]);
         var sec13 = max(state["21"] , state["22"]);
         sec13 = max(state["23"] , sec13);
-        Axios.post("http://localhost:3002/dsm_insert",{
+        Axios.post("https://addict-rehab-app.herokuapp.com/dsm_insert",{
             reg_no:values.reg,
             sec1 : sec1,
             sec2 : sec2,

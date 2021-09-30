@@ -39,7 +39,7 @@ function PreviousHospitals(props) {
     let i=0;
     for(i=0;i<inputFields.length;i++)
     {
-    Axios.post("http://localhost:3002/other_hospitals_insert",{
+    Axios.post("https://addict-rehab-app.herokuapp.com/other_hospitals_insert",{
 
      reg:props.values.reg,
      hospital:inputFields[i].hospital,

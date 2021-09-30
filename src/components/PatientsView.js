@@ -28,7 +28,7 @@ export default function PatientsView(){
     const [userList,setUserList]=useState([]);
 
     useEffect(()=>{
-        Axios.get("http://localhost:3002/read_patient").then((response)=>{
+        Axios.get("https://addict-rehab-app.herokuapp.com/read_patient").then((response)=>{
             setUserList(response.data);
             
         });

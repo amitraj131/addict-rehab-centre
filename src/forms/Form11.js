@@ -18,7 +18,7 @@ export class Form11 extends Component {
 
     console.log(this.props.values.startingAgeOfWork,this.props.values.legalCases,this.props.values.numberOfTimesLegalities);
 
-    Axios.post("http://localhost:3002/occupation_financial_legal_insert",{
+    Axios.post("https://addict-rehab-app.herokuapp.com/occupation_financial_legal_insert",{
       reg_no:this.props.values.reg,
       startingAgeOfWork:this.props.values.startingAgeOfWork,
       yearsOfWorking:this.props.values.yearsOfWorking,

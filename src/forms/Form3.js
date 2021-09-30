@@ -158,7 +158,7 @@ export class Form3 extends Component {
   
     //console.log(this.props.values.rs_totry+","+this.props.values.rs_tofeelbetter+","+this.props.values.rs_toavoidproblems+","+this.props.values.rs_other)
     //console.log(this.props.values.rs_other_stressor);
-    Axios.post("http://localhost:3002/reasons_insert",{
+    Axios.post("https://addict-rehab-app.herokuapp.com/reasons_insert",{
       reg:this.props.values.reg,
       reason:this.props.values.rs_totry+" "+this.props.values.rs_tofeelbetter+" "+this.props.values.rs_toavoidproblems+" "+this.props.values.rs_other,
       reason_continued:this.props.values.rc_likedtheeffect+" "+this.props.values.rc_friendsforced+" "+this.props.values.rc_gaveconfidence+" "+this.props.values.rc_craving+" "+this.props.values.rc_feltrelaxed+" "+this.props.values.rc_others,

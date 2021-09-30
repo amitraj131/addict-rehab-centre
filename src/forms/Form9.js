@@ -78,7 +78,7 @@ export class Form9 extends Component {
     }
     console.log(this.props.difficultyInOrgasm);
 
-    Axios.post("http://localhost:3002/sexual_hist_insert",{
+    Axios.post("https://addict-rehab-app.herokuapp.com/sexual_hist_insert",{
       reg_no:this.props.values.reg,
       extra_marital:this.props.values.extra_marital,
       pre_marital:this.props.values.pre_marital,

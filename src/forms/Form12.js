@@ -67,7 +67,7 @@ export class Form12 extends Component {
       this.props.values.ace_others="Others. ";
     }
 
-    Axios.post("http://localhost:3002/sectionD_insert",{
+    Axios.post("https://addict-rehab-app.herokuapp.com/sectionD_insert",{
       reg_no:this.props.values.reg,
       ace:this.props.values.ace_poverty+""+this.props.values.ace_early_parental_loss+""+this.props.values.ace_extra_marital_affairs_of_parents+""+this.props.values.ace_broken_home
                +""+this.props.values.ace_violence+""+this.props.values.ace_sexually_issue+""+this.props.values.ace_none,

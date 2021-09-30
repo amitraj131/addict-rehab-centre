@@ -132,7 +132,7 @@ function Drugs(props) {
     
     for(i=0;i<inputFields.length;i++)
     {
-    Axios.post("http://localhost:3002/presenting_cmplnts_insert",{
+    Axios.post("https://addict-rehab-app.herokuapp.com/presenting_cmplnts_insert",{
 
      reg:props.values.reg,
      drugName:inputFields[i].drugName,
