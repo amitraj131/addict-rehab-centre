@@ -45,16 +45,16 @@ const useStyles = makeStyles((theme) => ({
         },
       },
   }));
-  
+
+
   var sectionStyle = {
     alignItems:'left',
     justifyContent:'left',
-    width:'100%',
-    height: "100%",
+    width:'100vw',
+    height: "100vh",
     //backgroundImage: `url(${p6})`,
     backgroundColor:'#ffe6ff',
-    
-    
+    margin: 0
   };
   
 

@@ -20,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
     
     alignItems:'center',
     textAlign:'center',
+    display: 'block',
     color: theme.palette.text.secondary,
     fontSize:19,
     },
@@ -27,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
       
       alignItems:'center',
       justifyContent:'center',
-      display: 'flex',
+      display: 'block',
       flexWrap: 'wrap',
       '& > *': {
         margin: theme.spacing(4),
@@ -37,9 +38,11 @@ const useStyles = makeStyles((theme) => ({
     },
     img:{
       width:'100%',  
-      maxHeight:'auto'
+      maxHeight:'auto',
+      display: 'block'
     }
-  
+
+    
 }));
 
 var sectionStyle = {
@@ -48,8 +51,7 @@ var sectionStyle = {
   width:'100%',
   height: "100%",
   //backgroundImage: `url(${p6})`,
-  backgroundColor:'#ffe6ff'
-  
+  backgroundColor:'#ffe6ff',
 };
 
 
