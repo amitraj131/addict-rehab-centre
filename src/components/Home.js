@@ -20,7 +20,6 @@ const useStyles = makeStyles((theme) => ({
     
     alignItems:'center',
     textAlign:'center',
-    display: 'block',
     color: theme.palette.text.secondary,
     fontSize:19,
     },
@@ -28,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
       
       alignItems:'center',
       justifyContent:'center',
-      display: 'block',
+      display: 'flex',
       flexWrap: 'wrap',
       '& > *': {
         margin: theme.spacing(4),
@@ -38,11 +37,9 @@ const useStyles = makeStyles((theme) => ({
     },
     img:{
       width:'100%',  
-      maxHeight:'auto',
-      display: 'block'
+      maxHeight:'auto'
     }
-
-    
+  
 }));
 
 var sectionStyle = {
@@ -51,7 +48,8 @@ var sectionStyle = {
   width:'100%',
   height: "100%",
   //backgroundImage: `url(${p6})`,
-  backgroundColor:'#ffe6ff',
+  backgroundColor:'#ffe6ff'
+  
 };
 
 
@@ -73,7 +71,7 @@ export default function AutoGrid() {
         <Grid item xs className={classes.paper}>
               <p className={classes.paper} style={{paddingLeft:'30px',paddingRight:'50px',paddingTop:'50px',
               textAlign:'justify',color:'black'}}>Jana JagruthiVedike, a forum creating awareness against 
-              bad habits, is a precious of ShriKshetraDharmasthalaDharmadhikari 
+              bad habits, is a precious of ShriKshetra Dharmasthala Dharmadhikari 
               Dr. D. Veerendra Heggade. Realizing the hazards caused by alcohol 
               addiction venerable Dr. D. Veerendra Heggade discussed the matter 
               with the renowned personalities of the society. The collective 

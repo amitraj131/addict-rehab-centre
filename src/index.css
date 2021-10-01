@@ -8,14 +8,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
  
-div {
-  max-width: 768px;
-  max-height: 1024px;
-  margin: auto;
-  display: block;
-}
-
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
