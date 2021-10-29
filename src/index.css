@@ -21,3 +21,9 @@ code {
 button.MuiButton-containedSecondary {
   margin-bottom: 10px;
 }
+
+@media screen and (min-width: 415px){
+  .site-container {
+    flex-direction: row;
+  }
+}

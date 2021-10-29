@@ -9,7 +9,7 @@ import Modal from '@material-ui/core/Modal';
 import p1 from '../images/sdm-logo.jpg';
 import SignIn from './SignIn';
 import Container from '@material-ui/core/Container';
-import Carousell from '../components/Carousell';
+import Carousell from './Carousell';
 import Grid from '@material-ui/core/Grid';
 import Tabs from './Tabs';
 
@@ -108,7 +108,7 @@ function ButtonAppBar() {
           <Grid container >
             <Grid item xs={7}>
               <div >
-                <img src={p1} className={classes.img} style={{width:'1000px',height:'120px',paddingLeft:'60px',paddingTop:'15px',paddingBottom:'15px'}}/>
+                <img src={p1} className={classes.img} style={{width:'100px',height:'120px',paddingLeft:'60px',paddingTop:'15px',paddingBottom:'15px'}}/>
               </div>
             </Grid>
             <Grid item xs={5} style={{paddingTop:'20px',paddingLeft:'320px',maxWidth:'100%',paddingRight:'20px'}} >
@@ -126,6 +126,8 @@ function ButtonAppBar() {
           <Button  variant="contained" style={{backgroundColor:'MediumSpringGreen'}}><a href="http://127.0.0.1:5000/" className={classes.modtext}>Risk Prediction</a></Button>
           &nbsp;&nbsp;&nbsp;
           <Button  variant="contained" style={{backgroundColor:'MediumSpringGreen'}}><a href="http://127.0.0.1:5000/aai" className={classes.modtext}>AAI Prediction</a></Button>
+          &nbsp;&nbsp;&nbsp;
+          <Button  variant="contained" style={{backgroundColor:'MediumSpringGreen'}}><a href="http://127.0.0.1:5000/dsm" className={classes.modtext}>DSM-5 Prediction</a></Button>
           &nbsp;&nbsp;&nbsp;
           <Button variant="contained" style={{backgroundColor:'MediumSpringGreen'}} onClick={LoggedOut} ><a>Sign Out</a></Button> 
           </Toolbar>

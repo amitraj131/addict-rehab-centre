@@ -9,7 +9,7 @@ import Modal from '@material-ui/core/Modal';
 import p1 from '../images/sdm-logo.jpg';
 import SignIn from './SignIn';
 import Container from '@material-ui/core/Container';
-import Carousell from '../components/Carousell';
+import Carousell from './Carousell';
 import Grid from '@material-ui/core/Grid';
 
 
