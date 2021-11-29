@@ -11,7 +11,7 @@ import p5 from "../images/household-visits.jpg";
 import p6 from "../images/banner6.jpg";
 import Typography from "@material-ui/core/Typography";
 import Carousel from "react-bootstrap/Carousel";
-import Carousell from "./Carousell";
+import Carousell from "../components/Carousell";
 import { CardContent, CardHeader, CardMedia } from "@material-ui/core";
 
 const useStyles = makeStyles(theme => ({

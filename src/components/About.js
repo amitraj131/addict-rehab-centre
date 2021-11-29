@@ -8,7 +8,7 @@ import p7 from "../images/banner2.jpg";
 import p8 from "../images/banner4.jpg";
 import p2 from "../images/image.png";
 import p3 from "../images/banner3.jpg";
-import Carousell from "./Carousell";
+import Carousell from "../components/Carousell";
 import { Typography, Card, CardContent, CardMedia } from "@material-ui/core";
 import "bootstrap/dist/css/bootstrap.min.css";
 

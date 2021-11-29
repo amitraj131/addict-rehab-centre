@@ -9,7 +9,7 @@ import Modal from '@material-ui/core/Modal';
 import p1 from '../images/sdm-logo.jpg';
 import SignIn from './SignIn';
 import Container from '@material-ui/core/Container';
-import Carousell from './Carousell';
+import Carousell from '../components/Carousell';
 import Grid from '@material-ui/core/Grid';
 
 
@@ -122,8 +122,6 @@ function ButtonAppBar() {
           <Button variant="contained" style={{backgroundColor:'MediumSpringGreen'}}><Link to="/register" className={classes.modtext}>Patient Registration</Link></Button> 
           &nbsp;&nbsp;&nbsp;
           <Button variant="contained" style={{backgroundColor:'MediumSpringGreen'}}><Link to="/patients" className={classes.modtext}>Patients</Link></Button> 
-          &nbsp;&nbsp;&nbsp;
-          <Button  variant="contained" style={{backgroundColor:'MediumSpringGreen'}}><a href="http://127.0.0.1:5000/" className={classes.modtext}>Risk Prediction</a></Button>
           &nbsp;&nbsp;&nbsp;
           <Button variant="contained" style={{backgroundColor:'MediumSpringGreen'}} onClick={LoggedOut} >Sign Out</Button> 
           </Toolbar>
