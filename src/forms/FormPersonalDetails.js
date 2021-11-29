@@ -115,7 +115,7 @@ export class FormPersonalDetails extends Component {
             
             <AppBar title="Enter Personal Details" />
   
-          <TextField
+          <DatePicker
             id="datetime-local"
             label="Date of Registration"
             type="date"
