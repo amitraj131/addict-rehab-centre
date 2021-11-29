@@ -151,7 +151,6 @@ function ButtonAppBar() {
           </Link>
         </div>
         <div style={{ padding: 5 }}>
-          <Link to="/about">
             <Button
               variant="contained"
               style={{ backgroundColor: "MediumSpringGreen" }}
@@ -159,7 +158,6 @@ function ButtonAppBar() {
               onClick={LoggedOut}>
               Sign Out
             </Button>
-          </Link>
         </div>
         <div>
           <Modal

@@ -115,7 +115,6 @@ function ButtonAppBar() {
 							</Button>
 						</Link>
 					</div>
-
 					<div style={{ padding: 5 }}>
 						<Button
 							variant="contained"

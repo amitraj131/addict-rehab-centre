@@ -67,10 +67,10 @@ const checkLogin=()=>{
   return(
     <div  >
        
-      <Typography variant="h4"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sign In      </Typography><br/>
-      <TextField className={props.n1} style={{width:'425px'}} id="outlined-basic" label="Username" variant="outlined" onChange={(event)=>{setname(event.target.value);}} /><br /><br/>
-      <TextField className={props.n1} style={{width:'425px'}} id="outlined-password-input" label="Password" type="password" autoComplete="current-password" variant="outlined" onChange={(event)=>{setpass(event.target.value);}} /><br /><br />
-      <Button  className={props.n1} style={{width:'425px',height:'50px'}}  type="submit" onClick={checkLogin} variant="contained" color="primary">Sign In</Button>
+      <Typography variant="h4"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sign In      </Typography><br/>
+      <TextField className={props.n1} style={{width:'330px'}} id="outlined-basic" label="Username" variant="outlined" onChange={(event)=>{setname(event.target.value);}} /><br /><br/>
+      <TextField className={props.n1} style={{width:'330px'}} id="outlined-password-input" label="Password" type="password" autoComplete="current-password" variant="outlined" onChange={(event)=>{setpass(event.target.value);}} /><br /><br />
+      <Button  className={props.n1} style={{width:'330px',height:'50px'}}  type="submit" onClick={checkLogin} variant="contained" color="primary">Sign In</Button>
       <br/><center><div style={{fontSize:"18px",color:"red"}}>{err}</div></center>
     </div>
   )
