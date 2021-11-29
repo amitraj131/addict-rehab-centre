@@ -19,8 +19,6 @@ function App(){
                 <Route path='/about' component={About} />
                 <Route path='/register' component={UserForm} />
                 <Route path='/patients' component={PatientsView}  />
-                
-
             </Switch>
             <Footer />
         </BrowserRouter>

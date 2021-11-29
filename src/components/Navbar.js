@@ -116,42 +116,6 @@ function ButtonAppBar() {
 						</Link>
 					</div>
 					<div style={{ padding: 5 }}>
-						<a href="http://127.0.0.1:5000/risk">
-							<Button
-								variant="contained"
-								style={{ backgroundColor: "MediumSpringGreen" }}
-								fullWidth
-							>
-								risk prediction
-							</Button>
-						</a>
-					</div>
-
-					<div style={{ padding: 5 }}>
-						<a href="http://127.0.0.1:5000/aai">
-							<Button
-								variant="contained"
-								style={{ backgroundColor: "MediumSpringGreen" }}
-								fullWidth
-							>
-								AAI Prediction
-							</Button>
-						</a>
-					</div>
-
-					<div style={{ padding: 5 }}>
-						<a href="http://127.0.0.1:5000/dsm">
-							<Button
-								variant="contained"
-								style={{ backgroundColor: "MediumSpringGreen" }}
-								fullWidth
-							>
-								DSM-5 Prediction
-							</Button>
-						</a>
-					</div>
-
-					<div style={{ padding: 5 }}>
 						<Button
 							variant="contained"
 							style={{ backgroundColor: "MediumSpringGreen" }}

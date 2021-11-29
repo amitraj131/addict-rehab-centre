@@ -18,10 +18,8 @@ function rand() {
 }
 
 function getModalStyle() {
-  
-
   return {
-   top: '50%',
+    top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
     justifyContent:'center',
@@ -100,46 +98,89 @@ function ButtonAppBar() {
   );
 
   return (
-    <div >
-      
-    <div style={{paddingRight:'8px',paddingLeft:'8px',maxWidth:'100%',allignItems:'right'}}  className={classes.root} >
-      <AppBar style={{backgroundColor:'white',position:'relative'}} className={classes.img} >
-        
-          <Grid container >
-            <Grid item xs={5}>
-              <div >
-                <img src={p1} className={classes.img} style={{width:'100%',height:'120px',paddingLeft:'15px',paddingTop:'15px',paddingBottom:'15px'}}/>
-              </div>
-            </Grid>
-            <Grid item xs={7} style={{paddingTop:'20px',paddingLeft:'150px',maxWidth:'100%',paddingRight:'20px'}} >
-            <div className={classes.img} >
-          <Toolbar classname={classes.img} >
-          
-          <Button variant="contained" style={{backgroundColor:'MediumSpringGreen'}}><Link to="/"  className={classes.modtext}>Home</Link></Button>
-          &nbsp;&nbsp;&nbsp;
-          <Button variant="contained" style={{backgroundColor:'MediumSpringGreen'}}><Link to="/about" className={classes.modtext}>About Us</Link></Button>
-          &nbsp;&nbsp;&nbsp;
-          <Button variant="contained" style={{backgroundColor:'MediumSpringGreen'}}><Link to="/register" className={classes.modtext}>Patient Registration</Link></Button> 
-          &nbsp;&nbsp;&nbsp;
-          <Button variant="contained" style={{backgroundColor:'MediumSpringGreen'}}><Link to="/patients" className={classes.modtext}>Patients</Link></Button> 
-          &nbsp;&nbsp;&nbsp;
-          <Button  variant="contained" style={{backgroundColor:'MediumSpringGreen'}}><a href="http://127.0.0.1:5000/" className={classes.modtext}>Risk Prediction</a></Button>
-          &nbsp;&nbsp;&nbsp;
-          <Button variant="contained" style={{backgroundColor:'MediumSpringGreen'}} onClick={LoggedOut} >Sign Out</Button> 
-          </Toolbar>
-          </div>
-            </Grid>
-          </Grid>
-          
-         
-        
-      </AppBar> 
-    </div>
     <div>
-        <Carousell />
+    <div>
+      <div className="logoClass">
+        <img className="logo" src={p1} />
+      </div>
+      <div className="toolbar">
+        <div style={{ padding: 5 }}>
+          <Link to="/">
+            <Button
+              variant="contained"
+              style={{ backgroundColor: "MediumSpringGreen" }}
+              fullWidth
+            >
+              Home
+            </Button>
+          </Link>
         </div>
+        <div style={{ padding: 5 }}>
+          <Link to="/about">
+            <Button
+              variant="contained"
+              style={{ backgroundColor: "MediumSpringGreen" }}
+              fullWidth
+            >
+              About us
+            </Button>
+          </Link>
+        </div>
+        <div style={{ padding: 5 }}>
+          <Link to="/register">
+            <Button
+              variant="contained"
+              style={{ backgroundColor: "MediumSpringGreen" }}
+              fullWidth
+            >
+              Patient Registration
+            </Button>
+          </Link>
+        </div>
+        <div style={{ padding: 5 }}>
+          <Link to="/patients">
+            <Button
+              variant="contained"
+              style={{ backgroundColor: "MediumSpringGreen" }}
+              fullWidth
+            >
+              Patients
+            </Button>
+          </Link>
+        </div>
+        <div style={{ padding: 5 }}>
+          <Link to="/about">
+            <Button
+              variant="contained"
+              style={{ backgroundColor: "MediumSpringGreen" }}
+              fullWidth
+              onClick={LoggedOut}>
+              Sign Out
+            </Button>
+          </Link>
+        </div>
+        <div>
+          <Modal
+            justify="center"
+            style={{
+              display: "flex",
+              alignItems: "left",
+              justifyContent: "left",
+            }}
+            open={open}
+            onClose={handleClose}
+            aria-labelledby="simple-modal-title"
+            aria-describedby="simple-modal-description"
+          >
+            {body}
+          </Modal>
+        </div>
+      </div>
     </div>
-  );
+
+    <Carousell />
+  </div>
+);
 }
 
 export default withRouter(ButtonAppBar);
