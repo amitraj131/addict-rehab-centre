@@ -117,7 +117,7 @@ export class FormPersonalDetails extends Component {
   
           <DatePicker
             id="datetime-local"
-            label="Date of Registration"
+            placeholder="Date of Registration"
             type="date"
             onChange={handleChange('dor')}
             defaultValue={values.dor}
