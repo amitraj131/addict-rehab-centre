@@ -115,9 +115,9 @@ export class FormPersonalDetails extends Component {
             
             <AppBar title="Enter Personal Details" />
   
-          <DatePicker
+            <TextField
             id="datetime-local"
-            placeholder="Date of Registration"
+            label="Date of Registration"
             type="date"
             onChange={handleChange('dor')}
             defaultValue={values.dor}
