@@ -13,7 +13,7 @@ import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles({
   table: {
-    minWidth: 650,
+    minWidth: 400,
   },
 });
 
@@ -35,16 +35,16 @@ export default function PatientsView(){
     },[]);
 
     return (
-      <div>
+      <div className = "container">
           <br /><br/><br/>
           <center><h2>Patients Data</h2></center>
           <br/><br/>
           
-            <Grid container spacing={3}>
-              <Grid item xs={8}></Grid>
-            <Grid item xs={6}>
+            <Grid container spacing={4}>
+              {/* <Grid item xs={8}></Grid> */}
+            <Grid item xs={12}>
             <Paper elevation={100}>
-        <TableContainer style={{paddingRight:'130px',paddingLeft:'130px',backgroundColor:'#d6d6c2'}} component={Paper}>
+        <TableContainer style={{backgroundColor:'#d6d6c2'}} component={Paper}>
         <Table className={classes.table} aria-label="simple table">
           <TableHead>
             <TableRow>
@@ -86,7 +86,7 @@ export default function PatientsView(){
       </TableContainer>
       </Paper>
       </Grid>
-      <Grid item xs={2}></Grid>
+      {/* <Grid item xs={2}></Grid> */}
       </Grid>
       
       <br/><br/><br/><br/><br/>

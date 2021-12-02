@@ -154,33 +154,6 @@ function AddStaff(){
             <Grid item xs={1}></Grid>
          </Grid>
      </div>
-
-        /*<div>
-        <br/><br/><center>
-        Username :  <input type="text" 
-        onChange={(event)=>{setStaffUname(event.target.value);}} /><br /><br />
-        Password :  <input type="password" 
-        onChange={(event)=>{
-            setStaffPass(event.target.value);
-        }} /><br /><br />
-        Role :  <input type="text" 
-        onChange={(event)=>{
-            setRole(event.target.value);
-        }} /><br /><br />
-        <input type="button" onClick={addToUser} value="Add" />
-        <br/><br />
-       {/* <h1>User List</h1>
-         userList.map((val,key)=>{
-            return(
-                 <div key={key}>
-                     <h3>{val.uname}</h3>
-                     <h3>{val.pass}</h3>
-                     <h3>{val.role}</h3>
-                </div>
-            );
-        }) *//*}
-        </center>
-        </div>*/
     );
 }
 

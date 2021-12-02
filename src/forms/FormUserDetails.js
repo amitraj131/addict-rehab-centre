@@ -182,8 +182,8 @@ export class FormUserDetails extends Component {
               error={this.state.regError}
               helperText={this.state.regError}
             />
-            <br />
-            <TextField
+            {/* <br /> */}
+            {/* <TextField
               
               label="Camp Number"
               onChange={handleChange('campno')}
@@ -193,7 +193,7 @@ export class FormUserDetails extends Component {
               fullWidth
               error={this.state.campnoError}
               helperText={this.state.campnoError}
-            />
+            /> */}
             <br />
             <FormControl>
             <InputLabel htmlFor="camplace">Camp Place</InputLabel>
