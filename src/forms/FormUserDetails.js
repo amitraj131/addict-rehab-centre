@@ -36,7 +36,7 @@ export class FormUserDetails extends Component {
         campnoError:"",
         camplaceError:"",
       };
-  /*
+  
       if (this.props.values.firstName==="") {
         isError = true;
         errors.firstNameError = "First name field is required ";
@@ -99,7 +99,7 @@ export class FormUserDetails extends Component {
         ...this.state,
         ...errors
       });
-      */
+      
       
       if(!isError){
         this.props.nextStep();  

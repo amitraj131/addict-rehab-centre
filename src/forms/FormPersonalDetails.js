@@ -117,8 +117,8 @@ export class FormPersonalDetails extends Component {
   
             <TextField
             id="datetime-local"
-            label="Date of Registration"
-            type="date"
+            label="Date of Registration (dd-mm-yyyy)"
+            type="string"
             onChange={handleChange('dor')}
             defaultValue={values.dor}
             sx={{ width: 250 }}

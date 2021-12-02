@@ -13,6 +13,7 @@ export class Form7 extends Component {
   state={
     untowardError:"",
     famhistError:"",
+    allergyError:""
   }
   continue = e => {
     e.preventDefault();
@@ -20,6 +21,7 @@ export class Form7 extends Component {
     const errors={
       untowardError:"",
       famhistError:"",
+      allergyError:""
     }
 
     if(this.props.values.familyHistory==="")
@@ -32,6 +34,12 @@ export class Form7 extends Component {
     {
       isError=true;
       errors.untowardError="Select an option from dropdown"
+    }
+
+    if(this.props.values.allergyError==="")
+    {
+      isError=true;
+      errors.allergyError="Select an option from dropdown"
     }
 
     this.setState({
@@ -388,9 +396,12 @@ if(!isError)
                 handleChange={handleChange}
                 placeholder="Knowledge of allergy to specific drugs, (if known)"
                 label="allergy"
+                error={this.state.allergyError}
+                helperText={this.state.allergyError}
             
             />
             <br/>
+            
             <SelectGroup
                 values={values}
                 handleChange={handleChange}
@@ -437,6 +448,7 @@ if(!isError)
               variant="contained"
               onClick={this.continue}
               >Save and Continue</Button>
+            
             
           </Dialog>
         </>
