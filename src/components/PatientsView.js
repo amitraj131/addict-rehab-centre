@@ -42,7 +42,7 @@ export default function PatientsView(){
           
             <Grid container spacing={4}>
               {/* <Grid item xs={8}></Grid> */}
-            <Grid item xs={12}>
+            <Grid item xs={14}>
             <Paper elevation={100}>
         <TableContainer style={{backgroundColor:'#d6d6c2'}} component={Paper}>
         <Table className={classes.table} aria-label="simple table">
