@@ -41,7 +41,7 @@ export class Form3 extends Component {
     actionTakenError:"",
     nameCampOfficerError:"",
   };
-/*
+
   if(this.props.values.denialProblems==="")
   {
     isError=true;
@@ -73,7 +73,7 @@ export class Form3 extends Component {
     errors.nameCampOfficerError="Enter only letters"
   }
 }
-*/
+
   this.setState({
     ...this.state,
     ...errors

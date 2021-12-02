@@ -41,15 +41,15 @@ export default function PatientsView(){
           <br/><br/>
           
             <Grid container spacing={3}>
-              <Grid item xs={2}></Grid>
-            <Grid item xs={8}>
-            <Paper elevation={10}>
+              <Grid item xs={8}></Grid>
+            <Grid item xs={6}>
+            <Paper elevation={100}>
         <TableContainer style={{paddingRight:'130px',paddingLeft:'130px',backgroundColor:'#d6d6c2'}} component={Paper}>
         <Table className={classes.table} aria-label="simple table">
           <TableHead>
             <TableRow>
               <TableCell align="center"><h4>Name</h4></TableCell>
-              <TableCell align="center" ><h4>Register Number</h4></TableCell>
+              <TableCell align="center" ><h4>Registration Number</h4></TableCell>
               <TableCell align="center" ><h4>Camp Number</h4></TableCell>
               <TableCell align="center" ><h4>Age</h4></TableCell>
               <TableCell align="center" ><h4>Gender</h4></TableCell>

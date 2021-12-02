@@ -40,7 +40,7 @@ export class Form1 extends Component {
       supportAddressError:"",
       telError:"",
     };
-/*
+
     if (this.props.values.occupation==="") {
       isError = true;
       errors.occupationError = "Occupation field is required ";
@@ -101,7 +101,7 @@ export class Form1 extends Component {
     ...this.state,
     ...errors
   });
-  */
+  
 
   if(!isError){
     Axios.post("https://addict-rehab-app.herokuapp.com/demographic_insert",{

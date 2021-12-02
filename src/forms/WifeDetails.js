@@ -15,14 +15,14 @@ function WifeDetails(props){
                 type="number"
                 handleChange={props.handleChange}
                 values={props.values}
-                placeholder="Wife's Age"
+                placeholder="Spouse's Age"
             />
             <br></br>
             <SimpleTextFeild
                 label="f_wife_health"
                 handleChange={props.handleChange}
                 values={props.values}
-                placeholder="Wife's health description"
+                placeholder="Spouse's health description"
             />
             </div>
         );

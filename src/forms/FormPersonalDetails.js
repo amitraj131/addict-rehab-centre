@@ -43,7 +43,7 @@ export class FormPersonalDetails extends Component {
       eduError:"",
       referralError:"",
     };
-/*
+
     if (this.props.values.dor==="") {
       isError = true;
       errors.dorError = "Date of Registration field is required ";
@@ -84,7 +84,7 @@ export class FormPersonalDetails extends Component {
       isError=true;
       errors.referralError="Select the Refferal from dropdown";
     }
-*/
+
 
     this.setState({
       ...this.state,

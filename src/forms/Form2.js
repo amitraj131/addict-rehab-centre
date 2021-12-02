@@ -28,7 +28,7 @@ export class Form2 extends Component {
       dolError:"",
       qtylastError:"",
     };
-/*
+
    if(this.props.values.s_others){
      if(this.props.values.rs_other_stressor===""){
        isError=true;
@@ -50,7 +50,7 @@ export class Form2 extends Component {
      isError=true;
      errors.qtylastError="Quantity of last drink field is required"; 
    }
-   */
+   
 
     this.setState({
       ...this.state,

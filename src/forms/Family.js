@@ -326,7 +326,7 @@ for(let item of children){
 
         <br />
         <br />
-            <h3>3. Wife</h3>
+            <h3>3. Spouse</h3>
             <br></br>
             <FormControlLabel
             control={

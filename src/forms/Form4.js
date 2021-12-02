@@ -29,7 +29,7 @@ export class Form4 extends Component {
       sugarError:"",
       otherError:"",
     }
-/*
+
     if(this.props.values.pulseRate==="")
     {
       isError=true;
@@ -68,7 +68,7 @@ export class Form4 extends Component {
       isError=true;
       errors.heightError="This field is required";
     }
-*/
+
     this.setState({
       ...this.state,
       ...errors
