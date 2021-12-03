@@ -7,16 +7,16 @@ import Button from '@material-ui/core/Button';
 import Select from '@material-ui/core/Select';
 import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
-import SimpleTextFeild from './SimpleTextFeild';
+// import SimpleTextFeild from './SimpleTextFeild';
 import 'date-fns';
-import Grid from '@material-ui/core/Grid';
-import DateFnsUtils from '@date-io/date-fns';
-import {
-  MuiPickersUtilsProvider,
-  KeyboardTimePicker,
-  KeyboardDatePicker,
-} from '@material-ui/pickers';
-import { DatePicker } from '@material-ui/pickers'
+// import Grid from '@material-ui/core/Grid';
+// import DateFnsUtils from '@date-io/date-fns';
+// import {
+//   MuiPickersUtilsProvider,
+//   KeyboardTimePicker,
+//   KeyboardDatePicker,
+// } from '@material-ui/pickers';
+// import { DatePicker } from '@material-ui/pickers';
 
 export class FormPersonalDetails extends Component {
   state={
@@ -115,7 +115,7 @@ export class FormPersonalDetails extends Component {
             
             <AppBar title="Enter Personal Details" />
   
-            <TextField
+            { <TextField
             id="datetime-local"
             label="Date of Registration (dd-mm-yyyy)"
             type="string"
@@ -127,7 +127,7 @@ export class FormPersonalDetails extends Component {
             }}
             error={this.state.dorError}
             helperText={this.state.dorError}
-          />
+          /> }
              <br />
              <br />
             <TextField

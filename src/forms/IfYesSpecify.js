@@ -3,7 +3,7 @@ import TextField from '@material-ui/core/TextField';
 import ReactDOM from 'react-dom';
 function IfYesSpecify(props){
     const {yes , label ,type , placeholder , values , handleChange } = props;
-    if(yes == "Yes"){
+    if(yes === "Yes"){
         
     return(
         <div>

@@ -122,6 +122,31 @@ export class FormUserDetails extends Component {
             <AppBar title="Enter User Details" />
             <TextField
               
+              label="Camp Number"
+              onChange={handleChange('campno')}
+              defaultValue={values.campno}
+              margin="normal"
+              type="number"
+              fullWidth
+              error={this.state.campnoError}
+              helperText={this.state.campnoError}
+            />
+            <br />
+             <TextField
+              
+              required
+              label="First Name"
+              onChange={handleChange('firstName')}
+              defaultValue={values.firstName}
+              margin="normal"
+              fullWidth
+              error={this.state.firstNameError}
+              helperText={this.state.firstNameError}
+                            
+            />
+            <br />
+            <TextField
+              
               required
               label="First Name"
               onChange={handleChange('firstName')}
@@ -182,18 +207,6 @@ export class FormUserDetails extends Component {
               error={this.state.regError}
               helperText={this.state.regError}
             />
-            {/* <br /> */}
-            {/* <TextField
-              
-              label="Camp Number"
-              onChange={handleChange('campno')}
-              defaultValue={values.campno}
-              margin="normal"
-              type="number"
-              fullWidth
-              error={this.state.campnoError}
-              helperText={this.state.campnoError}
-            /> */}
             <br />
             <FormControl>
             <InputLabel htmlFor="camplace">Camp Place</InputLabel>
