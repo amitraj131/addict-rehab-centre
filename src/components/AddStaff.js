@@ -123,7 +123,7 @@ function AddStaff(){
             <br />
             <br />
             <Grid item xs={1}></Grid>
-            <Grid item xs={8} >
+            <Grid item xs={6} >
                 <Paper elevation={20} >
                     <div >
                         <TableContainer component={Paper} style={{backgroundColor:'#d8f3ea'}}>
