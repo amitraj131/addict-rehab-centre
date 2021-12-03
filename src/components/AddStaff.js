@@ -2,11 +2,11 @@ import React,{useState,useEffect} from 'react';
 import Axios from 'axios'; 
 import { TextField } from '@material-ui/core';
 import InputLabel from '@material-ui/core/InputLabel';
-import MenuItem from '@material-ui/core/MenuItem';
-import FormHelperText from '@material-ui/core/FormHelperText';
+// import MenuItem from '@material-ui/core/MenuItem';
+// import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
-import Icon from '@material-ui/core/Icon';
+// import Icon from '@material-ui/core/Icon';
 import SaveIcon from '@material-ui/icons/Save';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
@@ -68,7 +68,7 @@ function AddStaff(){
         <div>
             <Grid container className={classes.root} spacing={3}>
                 
-                <Grid item xs={4} >
+                <Grid item xs={12} >
                 <Paper elevation={20} >
                     <div style={{backgroundColor:'#d6d6c2'}}>
                     <center><br/><br/>
@@ -119,11 +119,14 @@ function AddStaff(){
                     </div>
                 </Paper>
             </Grid>
-            <Grid item xs={1}></Grid>
-            <Grid item xs={6} >
+            <div>
+            <br />
+            <br />
+            <Grid item xs={4}></Grid>
+            <Grid item xs={12} >
                 <Paper elevation={20} >
                     <div >
-                        <TableContainer component={Paper} style={{backgroundColor:'#d6d6c2'}}>
+                        <TableContainer component={Paper} style={{backgroundColor:'#d8f3ea'}}>
                             <Table className={classes.table} size="small" aria-label="a dense table">
                               <TableHead>
                                 <TableRow>
@@ -152,6 +155,7 @@ function AddStaff(){
                 </Paper>
             </Grid>
             <Grid item xs={1}></Grid>
+            </div>
          </Grid>
      </div>
     );

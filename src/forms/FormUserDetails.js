@@ -132,19 +132,6 @@ export class FormUserDetails extends Component {
               helperText={this.state.campnoError}
             />
             <br />
-             <TextField
-              
-              required
-              label="First Name"
-              onChange={handleChange('firstName')}
-              defaultValue={values.firstName}
-              margin="normal"
-              fullWidth
-              error={this.state.firstNameError}
-              helperText={this.state.firstNameError}
-                            
-            />
-            <br />
             <TextField
               
               required

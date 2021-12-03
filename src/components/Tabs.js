@@ -41,14 +41,14 @@ export default function LabTabs() {
             <Tab label="Home" value="1" />
             <Tab label="About Us" value="2" />
             <Tab label="Add User" value="3" />
-            {/*<Tab label="Users" value="4" />*/}
+            {/* <Tab label="Sign Out" value="4" /> */}
           </TabList>
         </AppBar>
 
         <TabPanel value="1" style={{backgroundColor:'#d8f3ea'}}><Home /></TabPanel>
         <TabPanel value="2" style={{backgroundColor:'#d8f3ea'}}><About /></TabPanel>
         <TabPanel value="3"><AddStaff /></TabPanel>
-        {/*<TabPanel value="4">Users </TabPanel>*/}
+        {/* <TabPanel value="4"><Home /> </TabPanel> */}
       </TabContext>
     </div>
   );

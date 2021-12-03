@@ -1,14 +1,14 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
+// import AppBar from "@material-ui/core/AppBar";
+// import Toolbar from "@material-ui/core/Toolbar";
+// import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import { Link, NavLink, withRouter } from "react-router-dom";
-import Modal from "@material-ui/core/Modal";
+// import Modal from "@material-ui/core/Modal";
 import p1 from "../images/sdm-logo.jpg";
 import SignIn from "./SignIn";
-import Container from "@material-ui/core/Container";
+// import Container from "@material-ui/core/Container";
 import Carousell from "../components/Carousell";
 import Grid from "@material-ui/core/Grid";
 import Tabs from "./Tabs";
@@ -99,86 +99,6 @@ function ButtonAppBar() {
 				</div>
 				<div className="toolbar">
 					<div style={{ padding: 5 }}>
-						<Link to="/">
-							<Button
-								variant="contained"
-								style={{ backgroundColor: "MediumSpringGreen" }}
-								fullWidth
-							>
-								Home
-							</Button>
-						</Link>
-					</div>
-					<div style={{ padding: 5 }}>
-						<Link to="/about">
-							<Button
-								variant="contained"
-								style={{ backgroundColor: "MediumSpringGreen" }}
-								fullWidth
-							>
-								About us
-							</Button>
-						</Link>
-					</div>
-					<div style={{ padding: 5 }}>
-						<Link to="/register">
-							<Button
-								variant="contained"
-								style={{ backgroundColor: "MediumSpringGreen" }}
-								fullWidth
-							>
-								Patient Registration
-							</Button>
-						</Link>
-					</div>
-					<div style={{ padding: 5 }}>
-						<Link to="/adduser">
-							<Button
-								variant="contained"
-								style={{ backgroundColor: "MediumSpringGreen" }}
-								fullWidth
-							>
-								Add user
-							</Button>
-						</Link>
-					</div>
-					<div style={{ padding: 5 }}>
-						<a href="http://127.0.0.1:5000/">
-							<Button
-								variant="contained"
-								style={{ backgroundColor: "MediumSpringGreen" }}
-								fullWidth
-							>
-								risk prediction
-							</Button>
-						</a>
-					</div>
-
-					<div style={{ padding: 5 }}>
-						<a href="http://127.0.0.1:5000/aai">
-							<Button
-								variant="contained"
-								style={{ backgroundColor: "MediumSpringGreen" }}
-								fullWidth
-							>
-								AAI Prediction
-							</Button>
-						</a>
-					</div>
-
-					<div style={{ padding: 5 }}>
-						<a href="http://127.0.0.1:5000/dsm">
-							<Button
-								variant="contained"
-								style={{ backgroundColor: "MediumSpringGreen" }}
-								fullWidth
-							>
-								DSM-5 Prediction
-							</Button>
-						</a>
-					</div>
-
-					<div style={{ padding: 5 }}>
 						<Button
 							variant="contained"
 							style={{ backgroundColor: "MediumSpringGreen" }}
@@ -198,5 +118,4 @@ function ButtonAppBar() {
 		</div>
 	);
 }
-
 export default withRouter(ButtonAppBar);
