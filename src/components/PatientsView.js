@@ -10,7 +10,12 @@ import Paper from '@material-ui/core/Paper';
 import {useState,useEffect} from 'react';
 import Axios from 'axios'; 
 import Grid from '@material-ui/core/Grid';
+import Button from '@material-ui/core/Button';
+<button  type="button" id="export" onclick="exportTableToExcel('tblData')">Export List</button>
 
+//<script>
+
+//</script>
 const useStyles = makeStyles({
   table: {
     minWidth: 400,
@@ -33,7 +38,35 @@ export default function PatientsView(){
             
         });
     },[]);
+    function exportTableToExcel(tableID, filename = '') {
+        var downloadLink;
+        var dataType = 'application/vnd.ms-excel';
+        var tableSelect = document.getElementById(tableID);
+        var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
 
+        // Specify file name
+        filename = filename ? filename + '.xls' : 'excel_data.xls';
+
+        // Create download link element
+        downloadLink = document.createElement("a");
+
+        document.body.appendChild(downloadLink);
+
+        if (navigator.msSaveOrOpenBlob) {
+            var blob = new Blob(['\ufeff', tableHTML], {
+                type: dataType
+            });
+            navigator.msSaveOrOpenBlob(blob, filename);
+        } else {
+            // Create a link to the file
+            downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
+            // Setting the file name
+            downloadLink.download = filename;
+
+            //triggering the function
+            downloadLink.click();
+        }
+    }
     return (
       <div className = "container">
           <br /><br/><br/>
@@ -45,7 +78,8 @@ export default function PatientsView(){
             <Grid item xs={12}>
             <Paper elevation={100}>
         <TableContainer style={{backgroundColor:'#d6d6c2'}} component={Paper}>
-        <Table className={classes.table} aria-label="simple table">
+        <Table className={classes.table} id={"234"} aria-label="simple table">
+
           <TableHead>
             <TableRow>
               <TableCell align="center"><h4>Name</h4></TableCell>
@@ -88,8 +122,14 @@ export default function PatientsView(){
       </Grid>
       {/* <Grid item xs={2}></Grid> */}
       </Grid>
+      <Button
       
+      color="secondary"
+      variant="contained"
+      //onClick={}
+    >Download Patients data</Button>
       <br/><br/><br/><br/><br/>
       </div>
+      
     );
 }

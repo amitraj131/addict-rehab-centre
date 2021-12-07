@@ -14,7 +14,12 @@ export class Confirm extends Component {
  
   };
 
-  
+  download = e =>{
+    e.preventDefault();
+    this.props.print();
+
+    
+  }
 
   back = e => {
     e.preventDefault();
@@ -58,6 +63,12 @@ export class Confirm extends Component {
               variant="contained"
               onClick={this.back}
             >Back</Button>
+
+<           Button
+              color="secondary"
+              variant="contained"
+              onClick={this.download}
+            >Download</Button>
 
             <Button
               color="primary"

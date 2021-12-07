@@ -41,60 +41,60 @@ export class Form1 extends Component {
       telError:"",
     };
 
-    if (this.props.values.occupation==="") {
-      isError = true;
-      errors.occupationError = "Occupation field is required ";
-    }
-    else if(!alphabet.test(this.props.values.occupation))
-    {
-      isError = true;
-      errors.occupationError = "Enter only characters";
-    }
+    // if (this.props.values.occupation==="") {
+    //   isError = true;
+    //   errors.occupationError = "Occupation field is required ";
+    // }
+    // else if(!alphabet.test(this.props.values.occupation))
+    // {
+    //   isError = true;
+    //   errors.occupationError = "Enter only characters";
+    // }
 
-    if(this.props.values.income===""){
-      isError=true;
-      errors.incomeError="Select the Income from dropdown";
-    }
+    // if(this.props.values.income===""){
+    //   isError=true;
+    //   errors.incomeError="Select the Income from dropdown";
+    // }
 
-    if(this.props.values.marital===""){
-      isError=true;
-      errors.maritalError="Select the Marital Status from dropdown";
-    }
+    // if(this.props.values.marital===""){
+    //   isError=true;
+    //   errors.maritalError="Select the Marital Status from dropdown";
+    // }
 
-    if(this.props.values.living===""){
-      isError=true;
-      errors.livingError="Select the Living Arrangement from dropdown";
-    }
+    // if(this.props.values.living===""){
+    //   isError=true;
+    //   errors.livingError="Select the Living Arrangement from dropdown";
+    // }
     
-    if (this.props.values.support==="") {
-      isError = true;
-      errors.supportError = "Support Person Name field is required ";
-    }
-    else if(!alphabet.test(this.props.values.support))
-    {
-      isError = true;
-      errors.supportError = "Enter only characters";
-    }
+    // if (this.props.values.support==="") {
+    //   isError = true;
+    //   errors.supportError = "Support Person Name field is required ";
+    // }
+    // else if(!alphabet.test(this.props.values.support))
+    // {
+    //   isError = true;
+    //   errors.supportError = "Enter only characters";
+    // }
 
-    if (this.props.values.supportrelation==="") {
-      isError = true;
-      errors.supportRelationError = "Support Person Relation field is required ";
-    }
-    else if(!alphabet.test(this.props.values.supportrelation))
-    {
-      isError = true;
-      errors.supportRelationError = "Enter only characters";
-    }
+    // if (this.props.values.supportrelation==="") {
+    //   isError = true;
+    //   errors.supportRelationError = "Support Person Relation field is required ";
+    // }
+    // else if(!alphabet.test(this.props.values.supportrelation))
+    // {
+    //   isError = true;
+    //   errors.supportRelationError = "Enter only characters";
+    // }
 
-    if (this.props.values.supportaddress==="") {
-      isError = true;
-      errors.supportAddressError = "Support Person Address field is required ";
-    }
-    else if(!alphabet.test(this.props.values.supportaddress))
-    {
-      isError = true;
-      errors.supportAddressError = "Enter only characters";
-    }
+    // if (this.props.values.supportaddress==="") {
+    //   isError = true;
+    //   errors.supportAddressError = "Support Person Address field is required ";
+    // }
+    // else if(!alphabet.test(this.props.values.supportaddress))
+    // {
+    //   isError = true;
+    //   errors.supportAddressError = "Enter only characters";
+    // }
 
 
   this.setState({

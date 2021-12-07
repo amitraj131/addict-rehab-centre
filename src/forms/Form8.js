@@ -24,23 +24,23 @@ export class Form7 extends Component {
       allergyError:""
     }
 
-    if(this.props.values.familyHistory==="")
-    {
-      isError=true;
-      errors.famhistError="Select an option from dropdown"
-    }
+    // if(this.props.values.familyHistory==="")
+    // {
+    //   isError=true;
+    //   errors.famhistError="Select an option from dropdown"
+    // }
 
-    if(this.props.values.untowardIncident==="")
-    {
-      isError=true;
-      errors.untowardError="Select an option from dropdown"
-    }
+    // if(this.props.values.untowardIncident==="")
+    // {
+    //   isError=true;
+    //   errors.untowardError="Select an option from dropdown"
+    // }
 
-    if(this.props.values.allergyError==="")
-    {
-      isError=true;
-      errors.allergyError="Select an option from dropdown"
-    }
+    // if(this.props.values.allergyError==="")
+    // {
+    //   isError=true;
+    //   errors.allergyError="Select an option from dropdown"
+    // }
 
     this.setState({
       ...this.state,
@@ -52,291 +52,291 @@ if(!isError)
     this.props.nextStep();
 
       //Withdrawal Symptoms
-      if(this.props.values.w_sweating){
-        this.props.values.w_sweating="Sweating. ";
-      }else{
-        this.props.values.w_sweating="";
-      }
-      if(this.props.values.w_palpitation){
-        this.props.values.w_palpitation="Palpitation. ";
-      }else{
-        this.props.values.w_palpitation="";
-      }
-      if(this.props.values.w_tremors){
-        this.props.values.w_tremors="Tremors. ";
-      }else{
-        this.props.values.w_tremors="";
-      }
-      if(this.props.values.w_insomnia){
-        this.props.values.w_insomnia="Insomnia. ";
-      }else{
-        this.props.values.w_insomnia="";
-      }
-      if(this.props.values.w_fits){
-        this.props.values.w_fits="Fits. ";
-      }else{
-        this.props.values.w_fits="";
-      }
-      if(this.props.values.w_nausea){
-        this.props.values.w_nausea="Nausea. ";
-      }else{
-        this.props.values.w_nausea="";
-      }
-      if(this.props.values.w_achesandpains){
-        this.props.values.w_achesandpains="Aches and Pains. ";
-      }else{
-        this.props.values.w_achesandpains="";
-      }
-      if(this.props.values.w_anxiety){
-        this.props.values.w_anxiety="Anxiety. ";
-      }else{
-        this.props.values.w_anxiety="";
-      }
-      if(this.props.values.w_restlessness){
-        this.props.values.w_restlessness="Restlessness. ";
-      }else{
-        this.props.values.w_restlessness="";
-      }
-      if(this.props.values.w_tactile){
-        this.props.values.w_tactile="Tactile. ";
-      }else{
-        this.props.values.w_tactile="";
-      }
-      if(this.props.values.w_illusions){
-        this.props.values.w_illusions="Illusions. ";
-      }else{
-        this.props.values.w_illusions="";
-      }
+      // if(this.props.values.w_sweating){
+      //   this.props.values.w_sweating="Sweating. ";
+      // }else{
+      //   this.props.values.w_sweating="";
+      // }
+      // if(this.props.values.w_palpitation){
+      //   this.props.values.w_palpitation="Palpitation. ";
+      // }else{
+      //   this.props.values.w_palpitation="";
+      // }
+      // if(this.props.values.w_tremors){
+      //   this.props.values.w_tremors="Tremors. ";
+      // }else{
+      //   this.props.values.w_tremors="";
+      // }
+      // if(this.props.values.w_insomnia){
+      //   this.props.values.w_insomnia="Insomnia. ";
+      // }else{
+      //   this.props.values.w_insomnia="";
+      // }
+      // if(this.props.values.w_fits){
+      //   this.props.values.w_fits="Fits. ";
+      // }else{
+      //   this.props.values.w_fits="";
+      // }
+      // if(this.props.values.w_nausea){
+      //   this.props.values.w_nausea="Nausea. ";
+      // }else{
+      //   this.props.values.w_nausea="";
+      // }
+      // if(this.props.values.w_achesandpains){
+      //   this.props.values.w_achesandpains="Aches and Pains. ";
+      // }else{
+      //   this.props.values.w_achesandpains="";
+      // }
+      // if(this.props.values.w_anxiety){
+      //   this.props.values.w_anxiety="Anxiety. ";
+      // }else{
+      //   this.props.values.w_anxiety="";
+      // }
+      // if(this.props.values.w_restlessness){
+      //   this.props.values.w_restlessness="Restlessness. ";
+      // }else{
+      //   this.props.values.w_restlessness="";
+      // }
+      // if(this.props.values.w_tactile){
+      //   this.props.values.w_tactile="Tactile. ";
+      // }else{
+      //   this.props.values.w_tactile="";
+      // }
+      // if(this.props.values.w_illusions){
+      //   this.props.values.w_illusions="Illusions. ";
+      // }else{
+      //   this.props.values.w_illusions="";
+      // }
 
-      if(this.props.values.mppast_Haematemesis){
-        this.props.values.mppast_Haematemesis="Haematemesis. ";
-      }else{
-        this.props.values.mppast_Haematemesis="";
-      }
-      if(this.props.values.mppast_jaundice){
-        this.props.values.mppast_jaundice="Jaundice. ";
-      }else{
-        this.props.values.mppast_jaundice="";
-      }
-      if(this.props.values.mppast_headinjury){
-        this.props.values.mppast_headinjury="Head Injury. ";
-      }else{
-        this.props.values.mppast_headinjury="";
-      }
-      if(this.props.values.mppast_siezure){
-        this.props.values.mppast_siezure="Seizure. ";
-      }else{
-        this.props.values.mppast_siezure="";
-      }
-      if(this.props.values.mppast_accidents){
-        this.props.values.mppast_accidents="Accidents. ";
-      }else{
-        this.props.values.mppast_accidents="";
-      }
-      if(this.props.values.mppast_abscesses){
-        this.props.values.mppast_abscesses="Abscesses. ";
-      }else{
-        this.props.values.mppast_abscesses="";
-      }
-      if(this.props.values.mppast_bleedingpiles){
-        this.props.values.mppast_bleedingpiles="Bleeding Piles. ";
-      }else{
-        this.props.values.mppast_bleedingpiles="";
-      }
-      if(this.props.values.mppast_skin_problems){
-        this.props.values.mppast_skin_problems="Skin Problems. ";
-      }else{
-        this.props.values.mppast_skin_problems="";
-      }
-      if(this.props.values.mppast_nervepains){
-        this.props.values.mppast_nervepains="Nerve Pains. ";
-      }else{
-        this.props.values.mppast_nervepains="";
-      }
-      if(this.props.values.mppast_other){
-        this.props.values.mppast_other="Other. ";
-      }else{
-        this.props.values.mppast_other="";
-      }
+      // if(this.props.values.mppast_Haematemesis){
+      //   this.props.values.mppast_Haematemesis="Haematemesis. ";
+      // }else{
+      //   this.props.values.mppast_Haematemesis="";
+      // }
+      // if(this.props.values.mppast_jaundice){
+      //   this.props.values.mppast_jaundice="Jaundice. ";
+      // }else{
+      //   this.props.values.mppast_jaundice="";
+      // }
+      // if(this.props.values.mppast_headinjury){
+      //   this.props.values.mppast_headinjury="Head Injury. ";
+      // }else{
+      //   this.props.values.mppast_headinjury="";
+      // }
+      // if(this.props.values.mppast_siezure){
+      //   this.props.values.mppast_siezure="Seizure. ";
+      // }else{
+      //   this.props.values.mppast_siezure="";
+      // }
+      // if(this.props.values.mppast_accidents){
+      //   this.props.values.mppast_accidents="Accidents. ";
+      // }else{
+      //   this.props.values.mppast_accidents="";
+      // }
+      // if(this.props.values.mppast_abscesses){
+      //   this.props.values.mppast_abscesses="Abscesses. ";
+      // }else{
+      //   this.props.values.mppast_abscesses="";
+      // }
+      // if(this.props.values.mppast_bleedingpiles){
+      //   this.props.values.mppast_bleedingpiles="Bleeding Piles. ";
+      // }else{
+      //   this.props.values.mppast_bleedingpiles="";
+      // }
+      // if(this.props.values.mppast_skin_problems){
+      //   this.props.values.mppast_skin_problems="Skin Problems. ";
+      // }else{
+      //   this.props.values.mppast_skin_problems="";
+      // }
+      // if(this.props.values.mppast_nervepains){
+      //   this.props.values.mppast_nervepains="Nerve Pains. ";
+      // }else{
+      //   this.props.values.mppast_nervepains="";
+      // }
+      // if(this.props.values.mppast_other){
+      //   this.props.values.mppast_other="Other. ";
+      // }else{
+      //   this.props.values.mppast_other="";
+      // }
 
 
-      if(this.props.values.mppresent_Haematemesis){
-        this.props.values.mppresent_Haematemesis="Haematemesis. ";
-      }else{
-        this.props.values.mppresent_Haematemesis="";
-      }
-      if(this.props.values.mppresent_jaundice){
-        this.props.values.mppresent_jaundice="Jaundice. ";
-      }else{
-        this.props.values.mppresent_jaundice="";
-      }
-      if(this.props.values.mppresent_headinjury){
-        this.props.values.mppresent_headinjury="Head Injury. ";
-      }else{
-        this.props.values.mppresent_headinjury="";
-      }
-      if(this.props.values.mppresent_siezure){
-        this.props.values.mppresent_siezure="Seizure. ";
-      }else{
-        this.props.values.mppresent_siezure="";
-      }
-      if(this.props.values.mppresent_accidents){
-        this.props.values.mppresent_accidents="Accidents. ";
-      }else{
-        this.props.values.mppresent_accidents="";
-      }
-      if(this.props.values.mppresent_abscesses){
-        this.props.values.mppresent_abscesses="Abscesses. ";
-      }else{
-        this.props.values.mppresent_abscesses="";
-      }
-      if(this.props.values.mppresent_bleedingpiles){
-        this.props.values.mppresent_bleedingpiles="Bleeding Piles. ";
-      }else{
-        this.props.values.mppresent_bleedingpiles="";
-      }
-      if(this.props.values.mppresent_skin_problems){
-        this.props.values.mppresent_skin_problems="Skin Problems. ";
-      }else{
-        this.props.values.mppresent_skin_problems="";
-      }
-      if(this.props.values.mppresent_nervepains){
-        this.props.values.mppresent_nervepains="Nerve Pains. ";
-      }else{
-        this.props.values.mppresent_nervepains="";
-      }
-      if(this.props.values.mppresent_other){
-        this.props.values.mppresent_other="Other. ";
-      }else{
-        this.props.values.mppresent_other="";
-      }
+      // if(this.props.values.mppresent_Haematemesis){
+      //   this.props.values.mppresent_Haematemesis="Haematemesis. ";
+      // }else{
+      //   this.props.values.mppresent_Haematemesis="";
+      // }
+      // if(this.props.values.mppresent_jaundice){
+      //   this.props.values.mppresent_jaundice="Jaundice. ";
+      // }else{
+      //   this.props.values.mppresent_jaundice="";
+      // }
+      // if(this.props.values.mppresent_headinjury){
+      //   this.props.values.mppresent_headinjury="Head Injury. ";
+      // }else{
+      //   this.props.values.mppresent_headinjury="";
+      // }
+      // if(this.props.values.mppresent_siezure){
+      //   this.props.values.mppresent_siezure="Seizure. ";
+      // }else{
+      //   this.props.values.mppresent_siezure="";
+      // }
+      // if(this.props.values.mppresent_accidents){
+      //   this.props.values.mppresent_accidents="Accidents. ";
+      // }else{
+      //   this.props.values.mppresent_accidents="";
+      // }
+      // if(this.props.values.mppresent_abscesses){
+      //   this.props.values.mppresent_abscesses="Abscesses. ";
+      // }else{
+      //   this.props.values.mppresent_abscesses="";
+      // }
+      // if(this.props.values.mppresent_bleedingpiles){
+      //   this.props.values.mppresent_bleedingpiles="Bleeding Piles. ";
+      // }else{
+      //   this.props.values.mppresent_bleedingpiles="";
+      // }
+      // if(this.props.values.mppresent_skin_problems){
+      //   this.props.values.mppresent_skin_problems="Skin Problems. ";
+      // }else{
+      //   this.props.values.mppresent_skin_problems="";
+      // }
+      // if(this.props.values.mppresent_nervepains){
+      //   this.props.values.mppresent_nervepains="Nerve Pains. ";
+      // }else{
+      //   this.props.values.mppresent_nervepains="";
+      // }
+      // if(this.props.values.mppresent_other){
+      //   this.props.values.mppresent_other="Other. ";
+      // }else{
+      //   this.props.values.mppresent_other="";
+      // }
 
-      if(this.props.values.chp_diabetes){
-        this.props.values.chp_diabetes="Diabetes. ";
-      }else{
-        this.props.values.chp_diabetes="";
-      }
-      if(this.props.values.chp_liver_disorders){
-        this.props.values.chp_liver_disorders="Liver Disorders. ";
-      }else{
-        this.props.values.chp_liver_disorders="";
-      }
-      if(this.props.values.chp_epilespy){
-        this.props.values.chp_epilespy="Epilepsy. ";
-      }else{
-        this.props.values.chp_epilespy="";
-      }
-      if(this.props.values.chp_respiratory_problem){
-        this.props.values.chp_respiratory_problem="Respiratory Problem. ";
-      }else{
-        this.props.values.chp_respiratory_problem="";
-      }
-      if(this.props.values.chp_pulmonary_TB){
-        this.props.values.chp_pulmonary_TB="Pulmonary Tuberculosis. ";
-      }else{
-        this.props.values.chp_pulmonary_TB="";
-      }
-      if(this.props.values.chp_chronic_bronchitis){
-        this.props.values.chp_chronic_bronchitis="Chronic Bronchitis. ";
-      }else{
-        this.props.values.chp_chronic_bronchitis="";
-      }
-      if(this.props.values.chp_bronchial_asthama){
-        this.props.values.chp_bronchial_asthama="Bronchial Asthama. ";
-      }else{
-        this.props.values.chp_bronchial_asthama="";
-      }
-      if(this.props.values.chp_cardiac_problems){
-        this.props.values.chp_cardiac_problems="Cardiac Problems. ";
-      }else{
-        this.props.values.chp_cardiac_problems="";
-      }
-      if(this.props.values.chp_infections){
-        this.props.values.chp_infections="Infections. ";
-      }else{
-        this.props.values.chp_infections="";
-      }
-      if(this.props.values.chp_others){
-        this.props.values.chp_others="Others ";
-      }else{
-        this.props.values.chp_others="";
-      }
+      // if(this.props.values.chp_diabetes){
+      //   this.props.values.chp_diabetes="Diabetes. ";
+      // }else{
+      //   this.props.values.chp_diabetes="";
+      // }
+      // if(this.props.values.chp_liver_disorders){
+      //   this.props.values.chp_liver_disorders="Liver Disorders. ";
+      // }else{
+      //   this.props.values.chp_liver_disorders="";
+      // }
+      // if(this.props.values.chp_epilespy){
+      //   this.props.values.chp_epilespy="Epilepsy. ";
+      // }else{
+      //   this.props.values.chp_epilespy="";
+      // }
+      // if(this.props.values.chp_respiratory_problem){
+      //   this.props.values.chp_respiratory_problem="Respiratory Problem. ";
+      // }else{
+      //   this.props.values.chp_respiratory_problem="";
+      // }
+      // if(this.props.values.chp_pulmonary_TB){
+      //   this.props.values.chp_pulmonary_TB="Pulmonary Tuberculosis. ";
+      // }else{
+      //   this.props.values.chp_pulmonary_TB="";
+      // }
+      // if(this.props.values.chp_chronic_bronchitis){
+      //   this.props.values.chp_chronic_bronchitis="Chronic Bronchitis. ";
+      // }else{
+      //   this.props.values.chp_chronic_bronchitis="";
+      // }
+      // if(this.props.values.chp_bronchial_asthama){
+      //   this.props.values.chp_bronchial_asthama="Bronchial Asthama. ";
+      // }else{
+      //   this.props.values.chp_bronchial_asthama="";
+      // }
+      // if(this.props.values.chp_cardiac_problems){
+      //   this.props.values.chp_cardiac_problems="Cardiac Problems. ";
+      // }else{
+      //   this.props.values.chp_cardiac_problems="";
+      // }
+      // if(this.props.values.chp_infections){
+      //   this.props.values.chp_infections="Infections. ";
+      // }else{
+      //   this.props.values.chp_infections="";
+      // }
+      // if(this.props.values.chp_others){
+      //   this.props.values.chp_others="Others ";
+      // }else{
+      //   this.props.values.chp_others="";
+      // }
   
-      //Psychiatric Complications Past
+      // //Psychiatric Complications Past
       
-       if(this.props.values.pcpast_consfusion){
-        this.props.values.pcpast_consfusion="Confusion. ";
-      }else{
-        this.props.values.pcpast_consfusion="";
-      }
-       if(this.props.values.pcpast_seizure){
-        this.props.values.pcpast_seizure="Seizure during withdrawal. ";
-      }else{
-        this.props.values.pcpast_seizure="";
-      }
-      if(this.props.values.pcpast_depression){
-        this.props.values.pcpast_depression="Depression. ";
-      }else{
-        this.props.values.pcpast_depression="";
-      }
-       if(this.props.values.pcpast_suicidal_ideation){
-        this.props.values.pcpast_suicidal_ideation="Suicidal Ideation. ";
-      }else{
-        this.props.values.pcpast_suicidal_ideation="";
-      }
-      if(this.props.values.pcpast_aggressive_outburst){
-        this.props.values.pcpast_aggressive_outburst="Aggressive Outburst. ";
-      }else{
-        this.props.values.pcpast_aggressive_outburst="";
-      }
-       if(this.props.values.pcpast_hallucination){
-        this.props.values.pcpast_hallucination="Hallucinaiton. ";
-      }else{
-        this.props.values.pcpast_hallucination="";
-      }
-      if(this.props.values.pcpast_paranoid_ideas){
-        this.props.values.pcpast_paranoid_ideas="Paranoid Ideas. ";
-      }else{
-        this.props.values.pcpast_paranoid_ideas="";
-      }
+      //  if(this.props.values.pcpast_consfusion){
+      //   this.props.values.pcpast_consfusion="Confusion. ";
+      // }else{
+      //   this.props.values.pcpast_consfusion="";
+      // }
+      //  if(this.props.values.pcpast_seizure){
+      //   this.props.values.pcpast_seizure="Seizure during withdrawal. ";
+      // }else{
+      //   this.props.values.pcpast_seizure="";
+      // }
+      // if(this.props.values.pcpast_depression){
+      //   this.props.values.pcpast_depression="Depression. ";
+      // }else{
+      //   this.props.values.pcpast_depression="";
+      // }
+      //  if(this.props.values.pcpast_suicidal_ideation){
+      //   this.props.values.pcpast_suicidal_ideation="Suicidal Ideation. ";
+      // }else{
+      //   this.props.values.pcpast_suicidal_ideation="";
+      // }
+      // if(this.props.values.pcpast_aggressive_outburst){
+      //   this.props.values.pcpast_aggressive_outburst="Aggressive Outburst. ";
+      // }else{
+      //   this.props.values.pcpast_aggressive_outburst="";
+      // }
+      //  if(this.props.values.pcpast_hallucination){
+      //   this.props.values.pcpast_hallucination="Hallucinaiton. ";
+      // }else{
+      //   this.props.values.pcpast_hallucination="";
+      // }
+      // if(this.props.values.pcpast_paranoid_ideas){
+      //   this.props.values.pcpast_paranoid_ideas="Paranoid Ideas. ";
+      // }else{
+      //   this.props.values.pcpast_paranoid_ideas="";
+      // }
       
-      //Psychiatric Complications Present
+      // //Psychiatric Complications Present
   
-      if(this.props.values.pcpresent_consfusion){
-        this.props.values.pcpresent_consfusion="Confusion. ";
-      }else{
-        this.props.values.pcpresent_consfusion="";
-      }
-       if(this.props.values.pcpresent_seizure){
-        this.props.values.pcpresent_seizure="Seizure during withdrawal. ";
-      }else{
-        this.props.values.pcpresent_seizure="";
-      }
-      if(this.props.values.pcpresent_depression){
-        this.props.values.pcpresent_depression="Depression. ";
-      }else{
-        this.props.values.pcpresent_depression="";
-      }
-       if(this.props.values.pcpresent_suicidal_ideation){
-        this.props.values.pcpresent_suicidal_ideation="Suicidal Ideation. ";
-      }else{
-        this.props.values.pcpresent_suicidal_ideation="";
-      }
-      if(this.props.values.pcpresent_aggressive_outburst){
-        this.props.values.pcpresent_aggressive_outburst="Aggressive Outburst. ";
-      }else{
-        this.props.values.pcpresent_aggressive_outburst="";
-      }
-       if(this.props.values.pcpresent_hallucination){
-        this.props.values.pcpresent_hallucination="Hallucinaiton. ";
-      }else{
-        this.props.values.pcpresent_hallucination="";
-      }
-      if(this.props.values.pcpresent_paranoid_ideas){
-        this.props.values.pcpresent_paranoid_ideas="Paranoid Ideas. ";
-      }else{
-        this.props.values.pcpresent_paranoid_ideas="";
-      }
+      // if(this.props.values.pcpresent_consfusion){
+      //   this.props.values.pcpresent_consfusion="Confusion. ";
+      // }else{
+      //   this.props.values.pcpresent_consfusion="";
+      // }
+      //  if(this.props.values.pcpresent_seizure){
+      //   this.props.values.pcpresent_seizure="Seizure during withdrawal. ";
+      // }else{
+      //   this.props.values.pcpresent_seizure="";
+      // }
+      // if(this.props.values.pcpresent_depression){
+      //   this.props.values.pcpresent_depression="Depression. ";
+      // }else{
+      //   this.props.values.pcpresent_depression="";
+      // }
+      //  if(this.props.values.pcpresent_suicidal_ideation){
+      //   this.props.values.pcpresent_suicidal_ideation="Suicidal Ideation. ";
+      // }else{
+      //   this.props.values.pcpresent_suicidal_ideation="";
+      // }
+      // if(this.props.values.pcpresent_aggressive_outburst){
+      //   this.props.values.pcpresent_aggressive_outburst="Aggressive Outburst. ";
+      // }else{
+      //   this.props.values.pcpresent_aggressive_outburst="";
+      // }
+      //  if(this.props.values.pcpresent_hallucination){
+      //   this.props.values.pcpresent_hallucination="Hallucinaiton. ";
+      // }else{
+      //   this.props.values.pcpresent_hallucination="";
+      // }
+      // if(this.props.values.pcpresent_paranoid_ideas){
+      //   this.props.values.pcpresent_paranoid_ideas="Paranoid Ideas. ";
+      // }else{
+      //   this.props.values.pcpresent_paranoid_ideas="";
+      // }
 
     Axios.post("https://addict-rehab-app.herokuapp.com/section_b_insert",{
       reg:this.props.values.reg,  

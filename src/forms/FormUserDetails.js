@@ -37,61 +37,61 @@ export class FormUserDetails extends Component {
         camplaceError:"",
       };
   
-      if (this.props.values.firstName==="") {
-        isError = true;
-        errors.firstNameError = "First name field is required ";
-      }
-      else if(!alphabet.test(this.props.values.firstName) ){
-        isError=true;
-        errors.firstNameError="Enter alphabet only";
-      }
+      // if (this.props.values.firstName==="") {
+      //   isError = true;
+      //   errors.firstNameError = "First name field is required ";
+      // }
+      // else if(!alphabet.test(this.props.values.firstName) ){
+      //   isError=true;
+      //   errors.firstNameError="Enter alphabet only";
+      // }
   
-      if (this.props.values.lastName==="") {
-        isError = true;
-        errors.lastNameError = "Last name field is required";
-      }
-      else if(!alphabet.test(this.props.values.lastName) ){
-        isError=true;
-        errors.lastNameError="Enter alphabet only";
-      }
-        if(this.props.values.age!==""){
-          if(this.props.values.age>=100 || this.props.values.age<18){
-              isError = true;
-                errors.ageError="Enter correct age(18 - 100)";
-            }
-          }
-          else{
-            isError = true;
-                errors.ageError="Age field is required";
-          }
+      // if (this.props.values.lastName==="") {
+      //   isError = true;
+      //   errors.lastNameError = "Last name field is required";
+      // }
+      // else if(!alphabet.test(this.props.values.lastName) ){
+      //   isError=true;
+      //   errors.lastNameError="Enter alphabet only";
+      // }
+      //   if(this.props.values.age!==""){
+      //     if(this.props.values.age>=100 || this.props.values.age<18){
+      //         isError = true;
+      //           errors.ageError="Enter correct age(18 - 100)";
+      //       }
+      //     }
+      //     else{
+      //       isError = true;
+      //           errors.ageError="Age field is required";
+      //     }
 
-          if(this.props.values.gender===""){
-            isError=true;
-            errors.genderError="Select the gender from dropdown";
-          }
+      //     if(this.props.values.gender===""){
+      //       isError=true;
+      //       errors.genderError="Select the gender from dropdown";
+      //     }
 
-          if(this.props.values.reg===""){
-            isError=true;
-            errors.regError="Registration No. field is required";
-          }
-          else if(!alphanumeric.test(this.props.values.reg)){
-            isError=true;
-            errors.regError="Do not include any special characters";
-          }
+      //     if(this.props.values.reg===""){
+      //       isError=true;
+      //       errors.regError="Registration No. field is required";
+      //     }
+      //     else if(!alphanumeric.test(this.props.values.reg)){
+      //       isError=true;
+      //       errors.regError="Do not include any special characters";
+      //     }
 
-        if(this.props.values.campno===""){
-          isError=true;
-          errors.campnoError="Camp No. field is required";
-        }
+      //   if(this.props.values.campno===""){
+      //     isError=true;
+      //     errors.campnoError="Camp No. field is required";
+      //   }
 
-        if(this.props.values.camplace===""){
-          isError=true;
-          errors.camplaceError="Camp Place field is required";
-        }
-        else if(!alphabet.test(this.props.values.campplace) ){
-          isError=true;
-          errors.campplaceError="Enter alphabet only";
-        }
+      //   if(this.props.values.camplace===""){
+      //     isError=true;
+      //     errors.camplaceError="Camp Place field is required";
+      //   }
+      //   else if(!alphabet.test(this.props.values.campplace) ){
+      //     isError=true;
+      //     errors.campplaceError="Enter alphabet only";
+      //   }
       
     
   
@@ -218,6 +218,7 @@ export class FormUserDetails extends Component {
               variant="contained"
               onClick={this.continue}
             >Continue</Button>
+            
           </Dialog>
         </>
       </MuiThemeProvider>

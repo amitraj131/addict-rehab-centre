@@ -44,46 +44,46 @@ export class FormPersonalDetails extends Component {
       referralError:"",
     };
 
-    if (this.props.values.dor==="") {
-      isError = true;
-      errors.dorError = "Date of Registration field is required ";
-    }
-    if (this.props.values.resadd==="") {
-      isError = true;
-      errors.res_addrError = "Residential Address field is required ";
-    }
-    if (this.props.values.telno==="") {
-      isError = true;
-      errors.telError = "Telephone Number field is required ";
-    }
-    else if(this.props.values.telno.length!==10)
-    {
-      isError = true;
-      errors.telError = "Enter only 10 digts don't include country code ";
-    }
-    if(this.props.values.religion===""){
-      isError=true;
-      errors.religError="Select the Religion from dropdown";
-    }
+    // if (this.props.values.dor==="") {
+    //   isError = true;
+    //   errors.dorError = "Date of Registration field is required ";
+    // }
+    // if (this.props.values.resadd==="") {
+    //   isError = true;
+    //   errors.res_addrError = "Residential Address field is required ";
+    // }
+    // if (this.props.values.telno==="") {
+    //   isError = true;
+    //   errors.telError = "Telephone Number field is required ";
+    // }
+    // else if(this.props.values.telno.length!==10)
+    // {
+    //   isError = true;
+    //   errors.telError = "Enter only 10 digts don't include country code ";
+    // }
+    // if(this.props.values.religion===""){
+    //   isError=true;
+    //   errors.religError="Select the Religion from dropdown";
+    // }
 
-    if (this.props.values.community==="") {
-      isError = true;
-      errors.commError = "Community field is required ";
-    }
-    else if(!alphabet.test(this.props.values.community) ){
-      isError=true;
-      errors.commError="Enter alphabet only";
-    }
+    // if (this.props.values.community==="") {
+    //   isError = true;
+    //   errors.commError = "Community field is required ";
+    // }
+    // else if(!alphabet.test(this.props.values.community) ){
+    //   isError=true;
+    //   errors.commError="Enter alphabet only";
+    // }
 
-    if(this.props.values.education===""){
-      isError=true;
-      errors.eduError="Select the Education from dropdown";
-    }
+    // if(this.props.values.education===""){
+    //   isError=true;
+    //   errors.eduError="Select the Education from dropdown";
+    // }
 
-    if(this.props.values.refferal===""){
-      isError=true;
-      errors.referralError="Select the Refferal from dropdown";
-    }
+    // if(this.props.values.refferal===""){
+    //   isError=true;
+    //   errors.referralError="Select the Refferal from dropdown";
+    // }
 
 
     this.setState({

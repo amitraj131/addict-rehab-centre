@@ -46,36 +46,36 @@ export class Form9 extends Component {
     this.props.setSexualProblems(abc);
     console.log(abc);
 
-    if(this.state.difficultyInOrgasm){
-      this.state.difficultyInOrgasm="Difficulty In Orgasm. ";
-    }else{
-      this.state.difficultyInOrgasm="";
-    }
-    if(this.state.reducedLibido){
-      this.state.reducedLibido="Reduced Libido. ";
-    }else{
-      this.state.reducedLibido="";
-    }
-    if(this.state.prematureEjaculation){
-      this.state.prematureEjaculation="Premature Ejaculation. ";
-    }else{
-      this.state.prematureEjaculation="";
-    }
-    if(this.state.impotency){
-      this.state.impotency="Impotency. ";
-    }else{
-      this.state.impotency="";
-    }
-    if(this.state.excessiveSexualSurge){
-      this.state.excessiveSexualSurge="Excessive Sexual Surge. ";
-    }else{
-      this.state.excessiveSexualSurge="";
-    }
-    if(this.state.completeAbstinence){
-      this.state.completeAbstinence="Complete Abstinence. ";
-    }else{
-      this.state.completeAbstinence="";
-    }
+    // if(this.state.difficultyInOrgasm){
+    //   this.state.difficultyInOrgasm="Difficulty In Orgasm. ";
+    // }else{
+    //   this.state.difficultyInOrgasm="";
+    // }
+    // if(this.state.reducedLibido){
+    //   this.state.reducedLibido="Reduced Libido. ";
+    // }else{
+    //   this.state.reducedLibido="";
+    // }
+    // if(this.state.prematureEjaculation){
+    //   this.state.prematureEjaculation="Premature Ejaculation. ";
+    // }else{
+    //   this.state.prematureEjaculation="";
+    // }
+    // if(this.state.impotency){
+    //   this.state.impotency="Impotency. ";
+    // }else{
+    //   this.state.impotency="";
+    // }
+    // if(this.state.excessiveSexualSurge){
+    //   this.state.excessiveSexualSurge="Excessive Sexual Surge. ";
+    // }else{
+    //   this.state.excessiveSexualSurge="";
+    // }
+    // if(this.state.completeAbstinence){
+    //   this.state.completeAbstinence="Complete Abstinence. ";
+    // }else{
+    //   this.state.completeAbstinence="";
+    // }
     console.log(this.props.difficultyInOrgasm);
 
     Axios.post("https://addict-rehab-app.herokuapp.com/sexual_hist_insert",{
