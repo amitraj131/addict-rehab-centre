@@ -219,7 +219,7 @@ export class Form2 extends Component {
               handleChange={handleChange}
               type="string"
               label="Date of Last Drink"
-              placeholder="(dd-mm-yyyy)"
+              placeholder="dd-mm-yyyy"
               error={this.state.dolError}
               helperText={this.state.dolError}
             />
