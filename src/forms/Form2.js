@@ -40,10 +40,10 @@ export class Form2 extends Component {
      }
    }
 
-   if(this.props.values.dol===""){
-     isError=true;
-     errors.dolError="Date of last drink field is required";
-   }
+  //  if(this.props.values.dol===""){
+  //    isError=true;
+  //    errors.dolError="Date of last drink field is required";
+  //  }
 
    if(this.props.values.qtylast==="")
    {
@@ -220,8 +220,7 @@ export class Form2 extends Component {
               type="string"
               label="Date of Last Drink"
               placeholder="dd-mm-yyyy"
-              error={this.state.dolError}
-              helperText={this.state.dolError}
+              
             />
 
             <br />
