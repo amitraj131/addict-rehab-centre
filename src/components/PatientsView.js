@@ -11,9 +11,9 @@ import {useState,useEffect} from 'react';
 import Axios from 'axios'; 
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
-//import MaterialTable from 'material-table';
+import MaterialTable from 'material-table';
 import XLSX from 'xlsx';
-<button  type="button" id="export" onclick="exportTableToExcel('tblData')">Export List</button>
+//<button  type="button" id="export" onclick="exportTableToExcel('tblData')">Export List</button>
 
 //<script>
 
@@ -40,52 +40,62 @@ export default function PatientsView(){
             
         });
     },[]);
-    // function exportTableToExcel(tableID, filename = '') {
-    //     var downloadLink;
-    //     var dataType = 'application/vnd.ms-excel';
-    //     var tableSelect = document.getElementById(tableID);
-    //     var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
 
-    //     // Specify file name
-    //     filename = filename ? filename + '.xls' : 'excel_data.xls';
+    const columns = [
+     
+    ]
+    
+    const patientData=[
+     ]
 
-    //     // Create download link element
-    //     downloadLink = document.createElement("a");
+     {userList.map((val,key)=>{
+      return(
+        <TableRow key={key}>
+          <TableCell align="center" component="th" scope="row"><h5>
+            {val.fname}&nbsp;&nbsp;{val.lname}</h5>
+          </TableCell>
+          <TableCell align="center" ><h5>{val.reg_no}</h5></TableCell>
+          <TableCell align="center" ><h5>{val.camp_no}</h5></TableCell>
+          <TableCell align="center" ><h5>{val.age}</h5></TableCell>
+          <TableCell align="center" ><h5>{val.gender}</h5></TableCell>
+          <TableCell align="center" ><h5>{val.dor}</h5></TableCell>
+        </TableRow>
+        );
+      }) 
+  }
 
-    //     document.body.appendChild(downloadLink);
+    const downloadExcel=()=>{
+      const newData=userList.map(row=>{
+        delete row.tableData 
+         return row})
 
-    //     if (navigator.msSaveOrOpenBlob) {
-    //         var blob = new Blob(['\ufeff', tableHTML], {
-    //             type: dataType
-    //         });
-    //         navigator.msSaveOrOpenBlob(blob, filename);
-    //     } else {
-    //         // Create a link to the file
-    //         downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
-    //         // Setting the file name
-    //         downloadLink.download = filename;
-
-    //         //triggering the function
-    //         downloadLink.click();
-    //     }
-    // }
+     const workSheet=XLSX.utils.json_to_sheet(newData)
+     const workBook=XLSX.utils.book_new()
+     XLSX.utils.book_append_sheet(workBook,workSheet,"166")
+    //Buffer
+    let buf=XLSX.write(workBook,{bookType:"xlsx",type:"buffer"})
+    //Binary String
+    XLSX.write(workBook,{bookType:"xlsx",type:"binary"})
+    XLSX.writeFile(workBook,"PatientData.xlsx")
+    }
     return (
       <div className = "container">
           <br /><br/><br/>
           <center><h2>Patients Data</h2></center>
           <br/><br/>
-          {/* <MaterialTable
+          { <MaterialTable
+            //backgroundColor='red'
             title="Patient Details"
-            columns={columns}
-            data={patientData}
+            //columns={columns}
+            //data={patientData}
             actions={[
               {
                 icon:()=><button>Export</button>,
                 tooltip:"Export to Excel",
-            onclick:()=>alert("clicked")
-               }
+            onClick:()=>downloadExcel(),
+            isFreeAction:true}
             ]}
-            /> */}
+            /> }
             <Grid container spacing={4}>
               {/* <Grid item xs={8}></Grid> */}
             <Grid item xs={12}>
@@ -132,15 +142,24 @@ export default function PatientsView(){
         </Table>
       </TableContainer>
       </Paper>
+
       </Grid>
       {/* <Grid item xs={2}></Grid> */}
       </Grid>
-      <Button
       
+      <Button
       color="secondary"
       variant="contained"
       //onClick={}
+      // actions={[
+      //         {
+      //           icon:()=><button>Export</button>,
+      //           tooltip:"Export to Excel",
+      //       onClick:()=>downloadExcel(),
+      //       isFreeAction:true}
+      //       ]}
     >Download Patients data</Button>
+
       <br/><br/><br/><br/><br/>
       </div>
       
