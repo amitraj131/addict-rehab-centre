@@ -29,27 +29,27 @@ export class Form2 extends Component {
       qtylastError:"",
     };
 
-   if(this.props.values.s_others){
-     if(this.props.values.rs_other_stressor===""){
-       isError=true;
-       errors.otherError="This field is required if Others selected"
-     }
-     else if(!alphabet.test(this.props.values.rs_other_stressor)){
-       isError=true;
-       errors.otherError="Only include characters";
-     }
-   }
+  //  if(this.props.values.s_others){
+  //    if(this.props.values.rs_other_stressor===""){
+  //      isError=true;
+  //      errors.otherError="This field is required if Others selected"
+  //    }
+  //    else if(!alphabet.test(this.props.values.rs_other_stressor)){
+  //      isError=true;
+  //      errors.otherError="Only include characters";
+  //    }
+  //  }
 
   //  if(this.props.values.dol===""){
   //    isError=true;
   //    errors.dolError="Date of last drink field is required";
   //  }
 
-   if(this.props.values.qtylast==="")
-   {
-     isError=true;
-     errors.qtylastError="Quantity of last drink field is required"; 
-   }
+  //  if(this.props.values.qtylast==="")
+  //  {
+  //    isError=true;
+  //    errors.qtylastError="Quantity of last drink field is required"; 
+  //  }
    
 
     this.setState({
@@ -232,8 +232,7 @@ export class Form2 extends Component {
               label="qtylast"
               placeholder="Quantity Of Last Drink(in ml)"
               type="number"
-              error={this.state.qtylastError}
-              helperText={this.state.qtylastError}
+             
             />
             
             <br />

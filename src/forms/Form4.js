@@ -30,44 +30,44 @@ export class Form4 extends Component {
       otherError:"",
     }
 
-    if(this.props.values.pulseRate==="")
-    {
-      isError=true;
-      errors.pulseError="This field is required";
-    }
+    // if(this.props.values.pulseRate==="")
+    // {
+    //   isError=true;
+    //   errors.pulseError="This field is required";
+    // }
 
-    if(this.props.values.bloodPressure==="")
-    {
-      isError=true;
-      errors.bpError="This field is required";
-    }
+    // if(this.props.values.bloodPressure==="")
+    // {
+    //   isError=true;
+    //   errors.bpError="This field is required";
+    // }
 
-    if(this.props.values.weight==="")
-    {
-      isError=true;
-      errors.weightError="This field is required";
-    }
+    // if(this.props.values.weight==="")
+    // {
+    //   isError=true;
+    //   errors.weightError="This field is required";
+    // }
 
-    if(this.props.values.sugar==="")
-    {
-      isError=true;
-      errors.sugarError="This field is required";
-    }
+    // if(this.props.values.sugar==="")
+    // {
+    //   isError=true;
+    //   errors.sugarError="This field is required";
+    // }
 
-    if(this.props.values.otherdetails!=="")
-    {
-      if(!alphanumeric.test(this.props.values.otherdetails))
-      {
-        isError=true;
-        errors.otherError="Don't include special characters";
-      }
-    }
+    // if(this.props.values.otherdetails!=="")
+    // {
+    //   if(!alphanumeric.test(this.props.values.otherdetails))
+    //   {
+    //     isError=true;
+    //     errors.otherError="Don't include special characters";
+    //   }
+    // }
 
-    if(this.props.values.height==="")
-    {
-      isError=true;
-      errors.heightError="This field is required";
-    }
+    // if(this.props.values.height==="")
+    // {
+    //   isError=true;
+    //   errors.heightError="This field is required";
+    // }
 
     this.setState({
       ...this.state,
