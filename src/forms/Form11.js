@@ -124,7 +124,7 @@ export class Form11 extends Component {
                 label="occupationalDamage"
                 placeholder="Occupational Damage"
                 options={["Absenteeism","Warning or memos" , "Suspension Order" , "Dismissal Order"
-                    , "Transfer Order" , "Accidents on Job" , "Attend work under the influence of alcohol"]}
+                    , "Transfer Order" , "Accidents on Job" , "Attend work under the influence of alcohol","None"]}
                 values={values}
                 handleChange={handleChange}
             

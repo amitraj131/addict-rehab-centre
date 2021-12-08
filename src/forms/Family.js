@@ -217,6 +217,7 @@ for(let item of children){
          prblm:"Others",
          relation:values.f_otherss
        })
+       
     }
 
     this.props.nextStep();
