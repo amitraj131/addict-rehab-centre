@@ -62,13 +62,7 @@ export class Confirm extends Component {
               color="secondary"
               variant="contained"
               onClick={this.back}
-            >Back</Button>
-
-<           Button
-              color="secondary"
-              variant="contained"
-              onClick={this.download}
-            >Download</Button>
+            >Back</Button>          
 
             <Button
               color="primary"
