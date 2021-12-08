@@ -105,7 +105,7 @@ export class Form4 extends Component {
                 placeholder="Pulse Rate(in BPM)"
                 values={values}
                 handleChange={handleChange}
-                type="number"
+                type="string"
                 error={this.state.pulseError}
                 helperText={this.state.pulseError}
              />
@@ -115,7 +115,7 @@ export class Form4 extends Component {
                 placeholder="Blood Pressure(in mm Hg)"
                 values={values}
                 handleChange={handleChange}
-                type="number"
+                type="string"
                 error={this.state.bpError}
                 helperText={this.state.bpError}
              />
@@ -125,7 +125,7 @@ export class Form4 extends Component {
                 placeholder="Weight(in KG)"
                 values={values}
                 handleChange={handleChange}
-                type="number"
+                type="string"
                 error={this.state.weightError}
                 helperText={this.state.weightError}
              />
@@ -135,7 +135,7 @@ export class Form4 extends Component {
                 placeholder="Height(in cms)"
                 values={values}
                 handleChange={handleChange}
-                type="number"
+                type="string"
                 error={this.state.heightError}
                 helperText={this.state.heightError}
              />
@@ -145,7 +145,7 @@ export class Form4 extends Component {
                 placeholder="Sugar"
                 values={values}
                 handleChange={handleChange}
-                type="number"
+                type="string"
                 error={this.state.sugarError}
                 helperText={this.state.sugarError}
              />
