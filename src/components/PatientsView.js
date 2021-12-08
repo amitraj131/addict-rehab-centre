@@ -11,6 +11,8 @@ import {useState,useEffect} from 'react';
 import Axios from 'axios'; 
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
+//import MaterialTable from 'material-table';
+import XLSX from 'xlsx';
 <button  type="button" id="export" onclick="exportTableToExcel('tblData')">Export List</button>
 
 //<script>
@@ -38,41 +40,52 @@ export default function PatientsView(){
             
         });
     },[]);
-    function exportTableToExcel(tableID, filename = '') {
-        var downloadLink;
-        var dataType = 'application/vnd.ms-excel';
-        var tableSelect = document.getElementById(tableID);
-        var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
+    // function exportTableToExcel(tableID, filename = '') {
+    //     var downloadLink;
+    //     var dataType = 'application/vnd.ms-excel';
+    //     var tableSelect = document.getElementById(tableID);
+    //     var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
 
-        // Specify file name
-        filename = filename ? filename + '.xls' : 'excel_data.xls';
+    //     // Specify file name
+    //     filename = filename ? filename + '.xls' : 'excel_data.xls';
 
-        // Create download link element
-        downloadLink = document.createElement("a");
+    //     // Create download link element
+    //     downloadLink = document.createElement("a");
 
-        document.body.appendChild(downloadLink);
+    //     document.body.appendChild(downloadLink);
 
-        if (navigator.msSaveOrOpenBlob) {
-            var blob = new Blob(['\ufeff', tableHTML], {
-                type: dataType
-            });
-            navigator.msSaveOrOpenBlob(blob, filename);
-        } else {
-            // Create a link to the file
-            downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
-            // Setting the file name
-            downloadLink.download = filename;
+    //     if (navigator.msSaveOrOpenBlob) {
+    //         var blob = new Blob(['\ufeff', tableHTML], {
+    //             type: dataType
+    //         });
+    //         navigator.msSaveOrOpenBlob(blob, filename);
+    //     } else {
+    //         // Create a link to the file
+    //         downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
+    //         // Setting the file name
+    //         downloadLink.download = filename;
 
-            //triggering the function
-            downloadLink.click();
-        }
-    }
+    //         //triggering the function
+    //         downloadLink.click();
+    //     }
+    // }
     return (
       <div className = "container">
           <br /><br/><br/>
           <center><h2>Patients Data</h2></center>
           <br/><br/>
-          
+          {/* <MaterialTable
+            title="Patient Details"
+            columns={columns}
+            data={patientData}
+            actions={[
+              {
+                icon:()=><button>Export</button>,
+                tooltip:"Export to Excel",
+            onclick:()=>alert("clicked")
+               }
+            ]}
+            /> */}
             <Grid container spacing={4}>
               {/* <Grid item xs={8}></Grid> */}
             <Grid item xs={12}>

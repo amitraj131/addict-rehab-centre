@@ -67,11 +67,11 @@ export class Form3 extends Component {
   }
 
   if(this.props.values.nameCampOfficer!==""){
-  if(!alphabet.test(this.props.values.nameCampOfficer))
-  {
-    isError=true;
-    errors.nameCampOfficerError="Enter only letters"
-  }
+  // if(!alphabet.test(this.props.values.nameCampOfficer))
+  // {
+  //   isError=true;
+  //   errors.nameCampOfficerError="Enter only letters"
+  // }
 }
 
   this.setState({
@@ -282,6 +282,7 @@ export class Form3 extends Component {
             <br />
             <TextField
               label="Name of the Camp Officer/Administrative Officer" 
+              type="string"
               onChange={handleChange('nameCampOfficer')}
               defaultValue={values.nameCampOfficer}
               margin="normal"

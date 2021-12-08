@@ -240,7 +240,23 @@ export class Form9 extends Component {
             label="Complete Abstinence"
             />
             <br/>
+            <FormControlLabel
+            control={
+            <FormControl>
+            <Checkbox
+            native
+            defaultChecked={completeAbstinence}
+            onChange={e => this.add(e)}
+            name="completeAbstinence"
+            color="primary"
             
+            
+            />
+            </FormControl>
+            }
+            label="None"
+            />
+            <br/>
 
             <Button
               color="secondary"

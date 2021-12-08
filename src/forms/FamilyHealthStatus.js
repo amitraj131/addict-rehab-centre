@@ -160,6 +160,20 @@ function FamilyHealthStatus(props){
             label="f_otherss"
         />
         <br/>
+        <FormControlLabel
+            control={
+            <FormControl>
+            <Checkbox
+            native
+            defaultChecked={state.f_suicide}
+            onChange={event => checkBox(event)}
+            color="primary"
+        />
+          </FormControl>
+        }
+        label="None"
+        />
+        <br/>
         
         </div>
     );

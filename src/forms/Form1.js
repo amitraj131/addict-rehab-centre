@@ -225,6 +225,7 @@ export class Form1 extends Component {
             
             <TextField
               label="Name of the Support Person Acompanied"
+              type="string"
               onChange={handleChange('support')}
               defaultValue={values.support}
               margin="normal"
