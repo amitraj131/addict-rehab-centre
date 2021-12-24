@@ -9,8 +9,9 @@ import Legalities from './Legalities';
 import SelectGroup from './SelectGroup';
 import IfYesSpecify from './IfYesSpecify';
 import 'date-fns';
-import Axios from "axios";
+import Checkbox from '@material-ui/core/Checkbox';
 
+import Axios from "axios";
 
 export class Form11 extends Component {
   continue = e => {
@@ -29,7 +30,7 @@ export class Form11 extends Component {
       reasonOfUnemployed:this.props.values.reasonOfUnemployed,
       occupationalDamage:this.props.values.occupationalDamage,
       natureOfCurrentWork:this.props.values.natureOfCurrentWork,
-
+      fh_bank:this.props.values.fh_bank,
 
       totalDebtAmount:this.props.values.totalDebtAmount,
       moneyBorrowedFrom:this.props.values.moneyBorrowedFrom,
@@ -41,6 +42,7 @@ export class Form11 extends Component {
 
     this.props.nextStep();
   };
+
 
   back = e => {
     e.preventDefault();
@@ -157,7 +159,6 @@ export class Form11 extends Component {
             
             />
             <br/>
-
             <SelectGroup
                 options={["Bank" , "Family and Friends" , "Place of Work" , "Money Lenders" , 
                     "SHG" , "Pawn Shops" , "Liquor Shop" , "Hand Loan" , "None"]}
@@ -166,6 +167,21 @@ export class Form11 extends Component {
                 handleChange={handleChange}
                 placeholder="Money Borrowed from"
             />
+            <br/>
+{/* 
+      //     { <h5>Money Borrowed from</h5>
+            /*{ fh_bank,
+        fh_ff,
+        fh_placeofwork,
+        fh_moneylenders,
+        fh_SHG,
+        fh_Pawnshops,
+        fh_liquorshops,
+        fh_handloan,
+        fh_no, }*/
+  }
+           
+
             <br/>
             <h1>Legal History</h1>
             <br/>

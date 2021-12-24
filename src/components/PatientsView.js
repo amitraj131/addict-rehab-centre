@@ -90,7 +90,7 @@ export default function PatientsView(){
             //data={patientData}
             actions={[
               {
-                icon:()=><button>Export</button>,
+                icon:()=><button>Download Patient Data</button>,
                 tooltip:"Export to Excel",
             onClick:()=>downloadExcel(),
             isFreeAction:true}

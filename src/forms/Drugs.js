@@ -270,7 +270,7 @@ function Drugs(props) {
             <TextField
               name="yearOfUse"
               label="Number of Years of Use"
-              type="number"
+              type="string"
               value={inputField.yearOfUse}
               onChange={event => handleChangeInput(inputField.id, event)}
               error={yearsofuseError}
@@ -319,7 +319,7 @@ function Drugs(props) {
               value={inputField.useInLast30Days}
               onChange={event => handleChangeInput(inputField.id, event)}
               error={freqlastError}
-              type="number"
+              type="string"
               helperText={freqlastError}
             />
             <br></br>

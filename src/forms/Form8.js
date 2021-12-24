@@ -24,23 +24,23 @@ export class Form7 extends Component {
       allergyError:""
     }
 
-    // if(this.props.values.familyHistory==="")
-    // {
-    //   isError=true;
-    //   errors.famhistError="Select an option from dropdown"
-    // }
+    if(this.props.values.familyHistory==="")
+    {
+      isError=true;
+      errors.famhistError="Select an option from dropdown"
+    }
 
-    // if(this.props.values.untowardIncident==="")
-    // {
-    //   isError=true;
-    //   errors.untowardError="Select an option from dropdown"
-    // }
+    if(this.props.values.untowardIncident==="")
+    {
+      isError=true;
+      errors.untowardError="Select an option from dropdown"
+    }
 
-    // if(this.props.values.allergyError==="")
-    // {
-    //   isError=true;
-    //   errors.allergyError="Select an option from dropdown"
-    // }
+    if(this.props.values.allergyError==="")
+    {
+      isError=true;
+      errors.allergyError="Select an option from dropdown"
+    }
 
     this.setState({
       ...this.state,

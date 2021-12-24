@@ -1,5 +1,6 @@
 import React from 'react'
 import SimpleTextFeild from './SimpleTextFeild';
+import Button from '@material-ui/core/Button';
 
 function WifeDetails(props){
 
@@ -36,25 +37,28 @@ function WifeDetails(props){
                 label="f_wife_year_of_death"
                 handleChange={props.handleChange}
                 values={props.values}
-                placeholder="Wife's Year Of Death"
+                placeholder="Spouse's Year Of Death"
             />
             <br></br>
             <SimpleTextFeild
                 label="f_wife_cause_of_death"
                 handleChange={props.handleChange}
                 values={props.values}
-                placeholder="Wife's Cause Of Death"
+                placeholder="Spouse's Cause Of Death"
             />
             <SimpleTextFeild
                 label="f_wife_patient_age_at_death"
                 handleChange={props.handleChange}
                 values={props.values}
-                placeholder="Patient's age at death"
+                placeholder="Spouse's age at death"
             
             />
+            
             </div>
         );
+        
     }
+    
 }
 
 export default WifeDetails;

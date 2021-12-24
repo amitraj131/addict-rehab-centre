@@ -445,6 +445,15 @@ export class UserForm extends Component {
         maximum_period_of_abstenence,
         possible_factors_for_abstinence,
         significant_psychological_problems,
+        fh_bank,
+        fh_ff,
+        fh_placeofwork,
+        fh_moneylenders,
+        fh_SHG,
+        fh_Pawnshops,
+        fh_liquorshops,
+        fh_handloan,
+        fh_no,
               } = this.state;
     const values = { firstName, lastName,age, gender,reg, dor, campno, camplace , resadd , telno , religion , community ,
             education,occupation,income,marital,living,support,supportrelation,supportaddress,refferal,drugs,
@@ -577,6 +586,16 @@ export class UserForm extends Component {
         maximum_period_of_abstenence,
         possible_factors_for_abstinence,
         significant_psychological_problems,
+
+        fh_bank,
+        fh_ff,
+        fh_placeofwork,
+        fh_moneylenders,
+        fh_SHG,
+        fh_Pawnshops,
+        fh_liquorshops,
+        fh_handloan,
+        fh_no,
           };
 
     

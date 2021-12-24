@@ -67,11 +67,11 @@ export class Form3 extends Component {
   }
 
   if(this.props.values.nameCampOfficer!==""){
-  // if(!alphabet.test(this.props.values.nameCampOfficer))
-  // {
-  //   isError=true;
-  //   errors.nameCampOfficerError="Enter only letters"
-  // }
+  if(!alphabet.test(this.props.values.nameCampOfficer))
+  {
+    isError=true;
+    errors.nameCampOfficerError="Enter only letters"
+  }
 }
 
   this.setState({
